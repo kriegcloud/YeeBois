@@ -1,0 +1,1 @@
+A confused jumble or medley of things. Please refer to root section [[Gallimaufry/Gallimaufry|Gallimaufry]] for further clarification.
