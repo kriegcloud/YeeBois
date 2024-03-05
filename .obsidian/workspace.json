@@ -8,60 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "19f735439deb5b4f",
+            "id": "ae6411a39abcdde8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Elucidations/Transient.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1be27a0fefc18a75",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Gallimaufry/Hella Shib.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "546fab397e36f9fe",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Elucidations/Wogs.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6361c9934250a2be",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Elucidations/Wogs.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a8eee890af35fcf7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Elucidations/shamefully-hoist=true.md",
+                "file": "Elucidations/Freshly Shorn Zuckhole.md",
                 "mode": "source",
                 "source": false
               }
@@ -133,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Elucidations/Transient.md",
+                "file": "Elucidations/Freshly Shorn Zuckhole.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Elucidations/Transient.md",
+                "file": "Elucidations/Freshly Shorn Zuckhole.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -173,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Elucidations/Transient.md"
+                "file": "Elucidations/Freshly Shorn Zuckhole.md"
               }
             }
           }
@@ -194,43 +146,43 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "19f735439deb5b4f",
+  "active": "ae6411a39abcdde8",
   "lastOpenFiles": [
-    "Gallimaufry/Gallimaufry.md",
-    "Elucidations/Transient.md",
+    "Wizardry/MDX Shit.md",
+    "Elucidations/Freshly Shorn Zuckhole.md",
+    "Wizardry/Typescript/Typescript.md",
     "Gallimaufry/Hella Shib.md",
-    "Gallimaufry/Yag Yeet.md",
-    "Plugins/Citations.md",
-    "Wizardry/Wizardry.md",
-    "Wizardry/AssemblyScript.md",
-    "Wizardry/Javascript/The Aristocrat of Programming Languages.md",
-    "Wizardry/Javascript/History of Javascript.md",
-    "Gallimaufry/Wizard Ideas/Dynamic URL Data Table Drizzle Queries.md",
-    "Gallimaufry/Wizard Ideas/Dank Stack.md",
-    "Exeleutherostomizations/Exeleutherostomizations.md",
     "Elucidations/Wogs.md",
+    "Elucidations/shamefully-hoist=true.md",
+    "Wizardry/AssemblyScript.md",
+    "Wizardry/Typescript/Infer.md",
+    "Wizardry/Typescript/eslint-no-implicit-any.md",
+    "Elucidations/sesquipedalian.md",
     "Elucidations/TLDW.md",
     "Elucidations/steampunk.md",
-    "Elucidations/shamefully-hoist=true.md",
-    "Elucidations/sesquipedalian.md",
-    "Elucidations/Gallimaufry.md",
     "Elucidations/exeleutherostomize.md",
+    "Elucidations/anachronistic.md",
+    "Elucidations/Transient.md",
+    "Elucidations/iniquitous.md",
     "Elucidations/Elucidations.md",
-    "DankStack/From Scratch.md",
-    "Exeleutherostomizations",
     "Yee Bois.md",
-    "Rich Website.md",
+    "Wizardry/Typescript",
+    "Wizardry/Wizardry.md",
+    "Wizardry/Javascript/History of Javascript.md",
+    "Wizardry/Javascript/The Aristocrat of Programming Languages.md",
+    "Templates/Index.md",
+    "Templates/Block Qoute.md",
+    "Templates/Attribution.md",
+    "Plugins/Citations.md",
+    "Gallimaufry/Yag Yeet.md",
+    "Exeleutherostomizations",
     "DankStack",
     "Untitled.canvas",
     "Gallimaufry/Wizard Ideas",
-    "Templates/Attribution.md",
-    "Wizardry/Untitled",
     "Wizardry/cloud",
     "Wizardry/tooling",
     "Wizardry/packages",
     "Wizardry/Typescript",
-    "Templates/Block Qoute.md",
-    "Templates/Citations.md",
     "Wizardry",
     "Gallimaufry"
   ]
