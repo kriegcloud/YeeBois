@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Elucidations/Freshly Shorn Zuckhole.md",
+                "file": "Wizardry/Typescript/eslint-no-implicit-any.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Elucidations/Freshly Shorn Zuckhole.md",
+                "file": "Wizardry/Typescript/eslint-no-implicit-any.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Elucidations/Freshly Shorn Zuckhole.md",
+                "file": "Wizardry/Typescript/eslint-no-implicit-any.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Elucidations/Freshly Shorn Zuckhole.md"
+                "file": "Wizardry/Typescript/eslint-no-implicit-any.md"
               }
             }
           }
@@ -148,33 +148,34 @@
   },
   "active": "ae6411a39abcdde8",
   "lastOpenFiles": [
+    "Wizardry/Typescript/Infer.md",
+    "Wizardry/Winter Holers/Winter Holers.md",
+    "Templates/Folder Waypoint.md",
+    "Plugins/Waypoint - (Waypoint - Automatic Table of Contents Generator for).md",
+    "Plugins/Citations.md",
+    "Templates/Block Qoute.md",
+    "Templates/Index.md",
+    "Wizardry/Wizardry.md",
+    "Wizardry/Javascript/The Aristocrat of Programming Languages.md",
+    "Wizardry/Winter Holers",
+    "Elucidations/Colocation.md",
     "Wizardry/MDX Shit.md",
+    "Elucidations/Wogs.md",
+    "Elucidations/sesquipedalian.md",
+    "Elucidations/iniquitous.md",
     "Elucidations/Freshly Shorn Zuckhole.md",
     "Wizardry/Typescript/Typescript.md",
     "Gallimaufry/Hella Shib.md",
-    "Elucidations/Wogs.md",
     "Elucidations/shamefully-hoist=true.md",
     "Wizardry/AssemblyScript.md",
-    "Wizardry/Typescript/Infer.md",
     "Wizardry/Typescript/eslint-no-implicit-any.md",
-    "Elucidations/sesquipedalian.md",
     "Elucidations/TLDW.md",
     "Elucidations/steampunk.md",
     "Elucidations/exeleutherostomize.md",
     "Elucidations/anachronistic.md",
     "Elucidations/Transient.md",
-    "Elucidations/iniquitous.md",
     "Elucidations/Elucidations.md",
-    "Yee Bois.md",
     "Wizardry/Typescript",
-    "Wizardry/Wizardry.md",
-    "Wizardry/Javascript/History of Javascript.md",
-    "Wizardry/Javascript/The Aristocrat of Programming Languages.md",
-    "Templates/Index.md",
-    "Templates/Block Qoute.md",
-    "Templates/Attribution.md",
-    "Plugins/Citations.md",
-    "Gallimaufry/Yag Yeet.md",
     "Exeleutherostomizations",
     "DankStack",
     "Untitled.canvas",
@@ -183,7 +184,6 @@
     "Wizardry/tooling",
     "Wizardry/packages",
     "Wizardry/Typescript",
-    "Wizardry",
-    "Gallimaufry"
+    "Wizardry"
   ]
 }
