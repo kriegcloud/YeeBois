@@ -1,0 +1,1 @@
+Bestow an award or praise on (someone) in recognition of an achievement.

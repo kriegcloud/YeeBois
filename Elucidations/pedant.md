@@ -1,0 +1,1 @@
+a person who is excessively concerned with minor details and rules or with displaying academic learning.

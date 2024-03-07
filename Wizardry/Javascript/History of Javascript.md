@@ -8,9 +8,9 @@
 ###### [Brendan Eich: JavaScript, Firefox, Mozilla, and Brave | Lex Fridman Podcast](https://www.youtube.com/watch?v=krB0enBeSiE)
 ---
 # [[TLDW]]
-Ah, gather 'round, ye digital neophytes and seasoned code-slingers, for a tale most grand! It was upon the frost-kissed morn of Christmas Day, 1990, that Sir Tim Berners-Lee, ensconced in the hallowed halls of Switzerland, bestowed upon this unworthy world its first web browser. Crafted on a NeXT computer, a device so arcane it’s practically [[steampunk]], this marvel was accompanied by the inaugural web server. But hark! There was a dilemma most vexing: the populace was blissfully ignorant of the Internet's existence. Imagine, a world unaware of what a cat meme was!
+Ah, gather 'round, ye digital neophytes and seasoned code-slingers, for a tale most grand! It was upon the frost-kissed morn of Christmas Day, 1990, that Sir Tim Berners-Lee, ensconced in the hallowed halls of Switzerland, bestowed upon this unworthy world its first web browser. Crafted on a NeXT computer, a device so arcane it’s practically [[steampunk]], this marvel was accompanied by the inaugural web server. But hark! There was a dilemma most vexing: the populace was ignorant of the Internet's existence. Imagine, a world without a sembalance of [[Elucidations/prescience|prescience]]!
 
-“Pray, what is this 'Internet' you speak of?” the masses inquired with a collective scratch of their unkempt heads. The response, as verbose as it was vague, described a behemoth network of computers, akin to an electronic Hydra with academic heads.
+“what is this 'Internet' you speak of?” the ranky dank buffalo masses inquired with a collective splooge of their unkempt heads. The response, as verbose as it was vague, described a behemoth network of computers, akin to an electronic Hydra with academic heads.
 
 Fast forward to the epoch of JavaScript, a scripting language so hastily constructed in a mere ten days, it made the Tower of Babel project look like a well-planned endeavor. This linguistic Frankenstein, originally dubbed Mocha, was the brainchild of Brendan Eich, tasked with marrying the elegance of Scheme to the brutish syntax of Java. A task, I assure you, as absurd as teaching a gorilla to sip tea with the Queen.
 

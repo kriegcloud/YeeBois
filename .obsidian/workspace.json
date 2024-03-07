@@ -8,15 +8,11 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ae6411a39abcdde8",
+            "id": "a17c015e0b487437",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Wizardry/Typescript/eslint-no-implicit-any.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Wizardry/Typescript/eslint-no-implicit-any.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Wizardry/Typescript/eslint-no-implicit-any.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Wizardry/Typescript/eslint-no-implicit-any.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,35 +138,35 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ae6411a39abcdde8",
+  "active": "a17c015e0b487437",
   "lastOpenFiles": [
-    "Wizardry/Typescript/Infer.md",
-    "Wizardry/Winter Holers/Winter Holers.md",
-    "Templates/Folder Waypoint.md",
-    "Plugins/Waypoint - (Waypoint - Automatic Table of Contents Generator for).md",
-    "Plugins/Citations.md",
-    "Templates/Block Qoute.md",
-    "Templates/Index.md",
-    "Wizardry/Wizardry.md",
-    "Wizardry/Javascript/The Aristocrat of Programming Languages.md",
-    "Wizardry/Winter Holers",
-    "Elucidations/Colocation.md",
-    "Wizardry/MDX Shit.md",
-    "Elucidations/Wogs.md",
-    "Elucidations/sesquipedalian.md",
-    "Elucidations/iniquitous.md",
-    "Elucidations/Freshly Shorn Zuckhole.md",
-    "Wizardry/Typescript/Typescript.md",
-    "Gallimaufry/Hella Shib.md",
-    "Elucidations/shamefully-hoist=true.md",
-    "Wizardry/AssemblyScript.md",
-    "Wizardry/Typescript/eslint-no-implicit-any.md",
-    "Elucidations/TLDW.md",
-    "Elucidations/steampunk.md",
-    "Elucidations/exeleutherostomize.md",
-    "Elucidations/anachronistic.md",
-    "Elucidations/Transient.md",
+    "Elucidations/Tovsonian Dialectic.md",
+    "Elucidations/banalities.md",
+    "Elucidations/banal.md",
+    "Elucidations/eschewing.md",
     "Elucidations/Elucidations.md",
+    "Elucidations/sagacious.md",
+    "Elucidations/perspicacious.md",
+    "Elucidations/ensconced.md",
+    "Elucidations/laurels.md",
+    "Elucidations/floriferous.md",
+    "Elucidations/yeeted.md",
+    "Elucidations/coiffure.md",
+    "Elucidations/cerulean.md",
+    "Elucidations/pedantic.md",
+    "Elucidations/pedagogue.md",
+    "Elucidations/Transient.md",
+    "Elucidations/pedant.md",
+    "Yee Bois.md",
+    "Elucidations/juvenescence.md",
+    "Elucidations/confound.md",
+    "Elucidations/prescience.md",
+    "Elucidations/Wogs.md",
+    "Exeleutherostomizations/Exeleutherostomizations.md",
+    "Elucidations/sesquipedalian.md",
+    "Wizardry/Javascript/History of Javascript.md",
+    "DankStack/DankStack.md",
+    "Wizardry/Winter Holers",
     "Wizardry/Typescript",
     "Exeleutherostomizations",
     "DankStack",
