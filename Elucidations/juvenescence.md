@@ -1,0 +1,1 @@
+The state of being youthful or of growing young.

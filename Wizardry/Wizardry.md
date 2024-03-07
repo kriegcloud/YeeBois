@@ -1,6 +1,15 @@
 This section is dedicated to all things code, preferably useful, opinionated and [[shamefully-hoist=true|shamefully hoisted]].
 
-# index
 ---
+%% Begin Waypoint %%
+- [[AssemblyScript]]
+- **[Javascript](./Javascript/Javascript.md)**
+- [[MDX Shit]]
+- **[Typescript](./Typescript/Typescript.md)**
+- **[Winter Holers](./Winter%20Holers/Winter%20Holers.md)**
+
+%% End Waypoint %%
+
+
 
 

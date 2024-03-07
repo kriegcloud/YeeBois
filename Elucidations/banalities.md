@@ -1,0 +1,1 @@
+the fact or condition of being [[Elucidations/banal|banal]]; unoriginality.
