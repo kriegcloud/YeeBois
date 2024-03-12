@@ -3,8 +3,10 @@ This section is dedicated to all things code, preferably useful, opinionated and
 ---
 %% Begin Waypoint %%
 - [[AssemblyScript]]
+- **[Graphs](./Graphs/Graphs.md)**
 - **[Javascript](./Javascript/Javascript.md)**
 - [[MDX Shit]]
+- **[Platforms](./Platforms/Platforms.md)**
 - **[Typescript](./Typescript/Typescript.md)**
 - **[Winter Holers](./Winter%20Holers/Winter%20Holers.md)**
 
