@@ -1,0 +1,1 @@
+Embed a customizable commenting experience into your product, enabling collaboration between your users. Liveblocks Comments is fully customizable, allowing you to create a range of commenting experiences that look and feel like your product. It enables you to build mentions, thread resolution, text annotations, video annotations, and more.

@@ -1,0 +1,2 @@
+[Link](https://liveblocks.io/docs/rooms/metadata)
+You can assign custom `metadata` to your room. For example, if you have different types of room experiences, you can store that type as `metadata`. This would then come handy when building an overview page listing all the rooms where the type `metadata` could be used as a filter, making it easy for people to find what they’re looking for.
