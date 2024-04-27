@@ -4,43 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "7961f4b0a7e47eaa",
+        "id": "4b564c0877e0daa4",
         "type": "tabs",
         "children": [
           {
-            "id": "a17c015e0b487437",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
-          },
-          {
-            "id": "cca3a8bec4ded37b",
+            "id": "4b2a2afad4c16508",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Elucidations/Tansack.md",
+                "file": "Elucidations/eschewing.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "1d68c4adafb50ea7",
+            "id": "e95f6435564bae0b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kernel Perceptron.md",
+                "file": "DankStack/TODO.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -106,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Kernel Perceptron.md",
+                "file": "DankStack/TODO.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Kernel Perceptron.md",
+                "file": "DankStack/TODO.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Kernel Perceptron.md"
+                "file": "DankStack/TODO.md"
               }
             }
           }
@@ -167,37 +159,37 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1d68c4adafb50ea7",
+  "active": "e95f6435564bae0b",
   "lastOpenFiles": [
-    "Wizardry/Platforms/Liveblocks/Liveblocks.md",
-    "Wizardry/Platforms/Platforms.md",
-    "Wizardry/Platforms/Liveblocks/Websocket infrastructure.md",
-    "Wizardry/Platforms/Liveblocks/Permissions.md",
-    "Wizardry/Platforms/Liveblocks/Metadata.md",
-    "Wizardry/Platforms/Liveblocks/authentication.md",
-    "Wizardry/Platforms/Liveblocks/Untitled.md",
-    "Wizardry/Platforms/Liveblocks/Comments.md",
-    "Wizardry/Platforms/Liveblocks/Yjs.md",
-    "Wizardry/Platforms/Liveblocks/Storage.md",
-    "Wizardry/Platforms/Liveblocks/Document.md",
-    "Wizardry/Platforms/Liveblocks/Platform.md",
-    "Wizardry/Platforms/Liveblocks/Integrations.md",
-    "Wizardry/Platforms/Liveblocks/Rooms.md",
-    "Wizardry/Platforms/Liveblocks/Products.md",
-    "Wizardry/Platforms/Liveblocks/Broadcast.md",
-    "Wizardry/Platforms/Liveblocks/Presence.md",
-    "Wizardry/Graphs/Directed Graphs.md",
+    "DankStack/DankStack.md",
+    "Exeleutherostomizations/Untitled.md",
+    "Templates/Templates.md",
+    "Templates/Index.md",
+    "Templates/Folder Waypoint.md",
+    "Templates/Block Qoute.md",
+    "Templates/Attribution.md",
+    "Plugins/Waypoint - (Waypoint - Automatic Table of Contents Generator for).md",
+    "Plugins/Plugins.md",
+    "Plugins/Citations.md",
+    "Gallimaufry/Yag Yeet.md",
+    "Gallimaufry/Trevor is a composer.md",
+    "Gallimaufry/Hella Shib.md",
+    "Gallimaufry/Gallimaufry.md",
+    "Gallimaufry/Wizard Ideas/Wizard Ideas.md",
+    "Gallimaufry/Wizard Ideas/Dynamic URL Data Table Drizzle Queries.md",
+    "Gallimaufry/Wizard Ideas/Dank Stack.md",
+    "Wizardry/Kernel Perceptron.md",
+    "Elucidations/ensconced.md",
+    "Elucidations/Elucidations.md",
+    "Elucidations/confound.md",
+    "Elucidations/Colocation.md",
+    "Elucidations/coiffure.md",
+    "Elucidations/cerulean.md",
+    "Elucidations/banalities.md",
+    "Elucidations/banal.md",
     "Wizardry/Platforms/Liveblocks",
     "Wizardry/Platforms",
-    "Wizardry/Graphs/Graphs.md",
     "Wizardry/Graphs",
-    "Wizardry/Untitled.md",
-    "Kernel Perceptron.md",
-    "Elucidations/Tansack.md",
-    "Elucidations/heuristic.md",
-    "Elucidations/Tovsonian Dialectic.md",
-    "Gallimaufry/Wizard Ideas/Wizard Ideas.md",
-    "Gallimaufry/Trevor is a composer.md",
     "Wizardry/Winter Holers",
     "Wizardry/Typescript",
     "Exeleutherostomizations",

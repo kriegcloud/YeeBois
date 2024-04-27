@@ -5,6 +5,7 @@ This section is dedicated to all things code, preferably useful, opinionated and
 - [[AssemblyScript]]
 - **[Graphs](./Graphs/Graphs.md)**
 - **[Javascript](./Javascript/Javascript.md)**
+- [[Kernel Perceptron]]
 - [[MDX Shit]]
 - **[Platforms](./Platforms/Platforms.md)**
 - **[Typescript](./Typescript/Typescript.md)**
