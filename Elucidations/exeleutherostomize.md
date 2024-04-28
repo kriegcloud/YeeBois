@@ -1,4 +1,4 @@
-Please Refer to the section of YeeBois titled
+Please Refer to the section of YeeBois titled [[Exeleutherostomizations]]
 ### Etymology
 
 (This [etymology](https://en.wiktionary.org/wiki/Wiktionary:Etymology "Wiktionary:Etymology") is missing or incomplete. Please add to it, or discuss it at the [Etymology scriptorium](https://en.wiktionary.org/wiki/Wiktionary:Etymology_scriptorium "Wiktionary:Etymology scriptorium"). Particularly: “Greek”) as if Greek *ἐξελευθεροστομίζειν, < ἐξ out + ἐλεύθερος free + στόμα mouth + -ίζ verbal suffix + -ειν infinitive ending.

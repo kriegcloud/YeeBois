@@ -1,14 +1,4 @@
-
-# reference projects
-These are also potential boilerplates to start from
-- [materio](https://mui.com/store/previews/materio-mui-react-nextjs-admin-template/)
-- [platforms](https://github.com/vercel/platforms)
-- [create-t3-turbo](https://github.com/t3-oss/create-t3-turbo)
-- [infisical](https://github.com/search?q=infisical&type=repositories)
-- [saas-starter-kit](https://github.com/boxyhq/saas-starter-kit)
-- [refine](https://github.com/refinedev/refine)
-- [cal.com](https://github.com/calcom/cal.com)
-
+Definition: [[Elucidations/meagerings|meagerings]] 
 # Security, Authentication & Authorization
 - Data Access Layer (DAL) for models
 - SAML 2.0
@@ -23,21 +13,26 @@ These are also potential boilerplates to start from
 - OIDC
 - SIWE (eth auth)
 - E2E Encryption
-- csrf token required on all mutations (prevent XSRF)
+- csrf token required on all mutations (preventXSRF)
 - CSP
 - Google Captcha?
 - Cloud falre ddos protection?
+- identity federation
 
 # Database & Storage
-- vercel postgres or neon
-- setup drizzle
 - migrations? or use neons push model
 - seed script
 - logging
 - S3 Bucket
 - CDN with domain
 - Presigned urls and ability to upload direct to s3
-- vercel KV
+#### postgres
+- [vercel postgres](https://vercel.com/docs/storage/vercel-kv)
+- [Neon](https://neon.tech/)
+- [pg-vector](https://github.com/pgvector/pgvector)
+- 
+#### ORM
+- drizzle
 
 # Logging
 
@@ -48,6 +43,8 @@ These are also potential boilerplates to start from
 - datadog?
 - Drizzle Logger
 - Grafana + Loki?
+- [Grafana Alloy](https://grafana.com/docs/alloy/latest/)
+- [trpc-opentelemetry](https://github.com/baselime/trpc-opentelemetry-middleware/blob/main/src/index.ts)
 
 # Analytics
 - Google Analytics?
@@ -120,7 +117,6 @@ These are also potential boilerplates to start from
 - Liveblocks?
 - Documentation versions like tanstack's docs
 
-
 # CI/CD, Versioning & Deploys
 - Github Actions or Gitlab?
 - terraform typescript sdk?
@@ -132,7 +128,6 @@ These are also potential boilerplates to start from
 - canaries?
 - blue/green deploys?
 - aws cdk?
-- 
 
 # Error handling & Validation
 > *Sentry trace propogation.*
@@ -189,8 +184,11 @@ These are also potential boilerplates to start from
 - PWA
 - Offline Mode Service Workers
 - Videos, HLS, Streaming
+- Browser File Optimizations
+- Object Recognition
+- Object classification
+- Web GPU
 
-# Client 
-
-
-
+# Cloud
+- https://fly.io/launchpad
+- https://railway.app/
