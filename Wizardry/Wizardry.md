@@ -9,6 +9,7 @@ This section is dedicated to all things code, preferably useful, opinionated and
 - [[KVM Switch]]
 - [[MDX Shit]]
 - **[Platforms](./Platforms/Platforms.md)**
+- **[Security](./Security/Security.md)**
 - [[Sentry Self host]]
 - **[Typescript](./Typescript/Typescript.md)**
 - **[Winter Holers](./Winter%20Holers/Winter%20Holers.md)**

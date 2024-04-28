@@ -11,6 +11,7 @@ Explanations that makes something clear; clarification.
 - [[Colocation]]
 - [[concurrently]]
 - [[confound]]
+- [[CSRF]]
 - [[damsels]]
 - [[ensconced]]
 - [[ephemeral]]
