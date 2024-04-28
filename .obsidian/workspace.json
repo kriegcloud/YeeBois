@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Elucidations/iniquitous.md",
+                "file": "Elucidations/concurrently.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Elucidations/iniquitous.md",
+                "file": "Elucidations/concurrently.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Elucidations/iniquitous.md",
+                "file": "Elucidations/concurrently.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Elucidations/iniquitous.md"
+                "file": "Elucidations/concurrently.md"
               }
             }
           }
@@ -160,15 +160,25 @@
       "publish:Publish changes...": false
     }
   },
-  "active": "a474fe3b40400e39",
+  "active": "75df79ab9661ce72",
   "lastOpenFiles": [
-    "DankStack/Untitled.md",
+    "Elucidations/Freshly Shorn Zuckhole.md",
     "Elucidations/iniquitous.md",
+    "Wizardry/Typescript/Infer.md",
+    "Elucidations/bitchery.md",
+    "Elucidations/quarelsome.md",
+    "Elucidations/charlatan.md",
+    "Elucidations/veritable.md",
+    "Elucidations/concurrently.md",
+    "concurrently",
+    "Exeleutherostomizations/existential.md",
+    "Elucidations/damsels.md",
+    "Elucidations/exeleutherostomize.md",
+    "Elucidations/lucre.md",
+    "DankStack/Untitled.md",
     "Elucidations/heuristic.md",
     "Elucidations/Gallimaufry.md",
-    "Elucidations/Freshly Shorn Zuckhole.md",
     "Elucidations/floriferous.md",
-    "Elucidations/exeleutherostomize.md",
     "Elucidations/eschewing.md",
     "Elucidations/ephemeral.md",
     "Elucidations/ensconced.md",
@@ -179,15 +189,6 @@
     "Elucidations/cerulean.md",
     "Elucidations/banalities.md",
     "Elucidations/banal.md",
-    "Elucidations/anachronistic.md",
-    "DankStack/references.md",
-    "DankStack/meagerings.md",
-    "DankStack/DankStack.md",
-    "DankStack/Color Pallet.md",
-    "Exeleutherostomizations/Exeleutherostomizations.md",
-    "Gallimaufry/Trevor is a composer.md",
-    "Gallimaufry/Hella Shib.md",
-    "Gallimaufry/Wizard Ideas/Wizard Ideas.md",
     "publish.css",
     "theme.css",
     "Wizardry/Platforms/Liveblocks",
@@ -197,7 +198,6 @@
     "Wizardry/Typescript",
     "Exeleutherostomizations",
     "DankStack",
-    "Untitled.canvas",
-    "Gallimaufry/Wizard Ideas"
+    "Untitled.canvas"
   ]
 }

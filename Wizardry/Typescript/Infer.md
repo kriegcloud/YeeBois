@@ -1,12 +1,12 @@
 Behold the grandiose paradigm of TypeScript's existential quandary! Herein lies a majestic conundrum, a veritable symphony of types, akin to the philosophical musings of yore.
 
-You are bestowed with two potential pursuits of paramount desire: 'Money' – a symbol of opulence and financial abundance, and 'Bitches' – a pursuit of carnality. Alas, the all mighty dictates a cruel twist; one must choose the path of either 'Lucre' or 'Damsels', yet cannot, under the laws of this existential chess game, tread both paths concurrently. This is not merely a choice, but a profound reflection of one's innermost values.
+You are bestowed with two potential pursuits of paramount desire: 'Money' – a symbol of opulence and financial abundance, and 'Bitches' – a pursuit of carnality. Alas, the all mighty dictates a cruel twist; one must choose the path of either [[Elucidations/lucre|lucre]] or [[Elucidations/damsels|damsels]], yet cannot, under the laws of this [[Exeleutherostomizations/existential|existential]] chess game, tread both paths [[concurrently|concurrently]]. This is not merely a choice, but a profound reflection of one's innermost values.
 
 ```
 type EsotericEnigma = true extends boolean ? 'Money' : 'Bitches';
 ```
 
-Should 'true' deign to reveal itself as a boolean, a veritable amount of `Money` is bestowed. Conversely, if 'true' is naught but a charlatan, then alas, a mere `Bitches` is your fate 'ChaliceOfChicanery'. A quarelsome bitchery of types and anti-types .
+Should 'true' deign to reveal itself as a boolean, a [[Elucidations/veritable|veritable]] amount of `Money` is bestowed. Conversely, if 'true' is naught but a [[Elucidations/charlatan|charlatan]], then alas, a mere `Bitches` is your fate 'ChaliceOfChicanery'. A [[Elucidations/quarelsome|quarelsome]] [[Elucidations/bitchery|bitchery]] of types and anti-types .
 
 At the moment EsotericEnigma returns `Money`
 

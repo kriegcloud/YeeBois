@@ -1,0 +1,5 @@
+_noun_
+
+1. money, especially when regarded as [sordid](https://www.google.com/search?sca_esv=a3c0eab97ff1867a&sxsrf=ACQVn0-Le6qw40GslETvUvLI1bws1uINJg:1714284932183&q=sordid&si=AKbGX_qTCvK6ifvkUBYDz4foaFZiiGmjw5SS0-j76-mUqwPf4e3p7aA7g4jzfXHDYe2DgjtNlmEZHWzgm57zMpACBH_ilC9d_Q%3D%3D&expnd=1&sa=X&ved=2ahUKEwjlxbSDoeSFAxUYlYkEHVCcDioQyecJegQIJBAO) or [distasteful](https://www.google.com/search?sca_esv=a3c0eab97ff1867a&sxsrf=ACQVn0-Le6qw40GslETvUvLI1bws1uINJg:1714284932183&q=distasteful&si=AKbGX_q4mkMHy1Nmq4yITjHYVzepzV75zTDC7nbFKdVgLVRNsHj3p9sVOcTt6dVKyt2zPUgHMERRw078dcm445OxbFSze9HsOQsA4JE3jsHF4L97-RNSv5w%3D&expnd=1&sa=X&ved=2ahUKEwjlxbSDoeSFAxUYlYkEHVCcDioQyecJegQIJBAP) or gained in a [dishonorable](https://www.google.com/search?sca_esv=a3c0eab97ff1867a&sxsrf=ACQVn0-Le6qw40GslETvUvLI1bws1uINJg:1714284932183&q=dishonorable&si=AKbGX_rEkSHdR9ulIQYeh6xSG1UBYKRbOwipBD-oKTqQou8LcJRsesFXGY2zNd0kWNcWbHkhp9Rr4_JbWFUxswJDMdyIM8cEz5wlqTn7W4bg5xQdkcGZqlY%3D&expnd=1&sa=X&ved=2ahUKEwjlxbSDoeSFAxUYlYkEHVCcDioQyecJegQIJBAQ) way.
+    
+    "officials getting their hands grubby with **filthy lucre**"
