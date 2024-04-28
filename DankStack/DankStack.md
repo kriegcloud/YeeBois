@@ -1,5 +1,7 @@
 %% Begin Waypoint %%
-- [[From Scratch]]
+- [[Color Pallet]]
+- [[meagerings]]
+- [[references]]
 
 %% End Waypoint %%
 

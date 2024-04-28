@@ -1,0 +1,1 @@
+Something that is iniquitous is **extremely immoral or wicked**, such as an iniquitous political regime that assassinates its enemies. Use the adjective iniquitous to describe something that is truly bad, morally wrong, extremely wicked, or completely unfair.

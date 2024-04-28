@@ -1,0 +1,1 @@
+quarrelsome stresses **an ill-natured readiness to fight without good cause**. the heat made us all quarrelsome. contentious implies perverse and irritating fondness for arguing and quarreling.

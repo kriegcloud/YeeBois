@@ -1,0 +1,1 @@
+The humble findings that are a result of hours spent in the [[Elucidations/ephemeral|ephemeral]] yet infinite expanse of github. 

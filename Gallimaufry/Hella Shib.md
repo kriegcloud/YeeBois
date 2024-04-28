@@ -2,7 +2,6 @@
 - [How can I use Bitbucket Pipelines with Vercel?](https://vercel.com/guides/how-can-i-use-bitbucket-pipelines-with-vercel) 
 - [Caching](https://turbo.build/repo/docs/core-concepts/caching)
 - [Skipping Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/skipping-tasks)
-- 
 
 # Drizzle:
 - [enforce that all queries have `tenantId` where clause](https://github.com/drizzle-team/drizzle-orm/discussions/1539)
