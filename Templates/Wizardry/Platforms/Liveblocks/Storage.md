@@ -1,0 +1,1 @@
+Liveblocks Storage is a real-time persisted data store designed for multiplayer creative tools such as Figma, Pitch, and Spline. `LiveList`, `LiveMap`, and `LiveObject` conflict-free data types can be used to build all sorts of multiplayer tools.

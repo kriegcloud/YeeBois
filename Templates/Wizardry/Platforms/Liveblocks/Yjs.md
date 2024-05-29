@@ -1,0 +1,1 @@
+Liveblocks Yjs is a real-time persisted data store designed for building collaborative text editors such as Notion and Google Docs.

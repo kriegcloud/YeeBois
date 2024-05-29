@@ -3,7 +3,6 @@ This section is dedicated to all things code, preferably useful, opinionated and
 ---
 %% Begin Waypoint %%
 - [[AssemblyScript]]
-- **[Data Structures & Algorithms](./Data%20Structures%20&%20Algorithms/Data%20Structures%20&%20Algorithms.md)**
 - **[Graphs](./Graphs/Graphs.md)**
 - **[Javascript](./Javascript/Javascript.md)**
 - [[Kernel Perceptron]]

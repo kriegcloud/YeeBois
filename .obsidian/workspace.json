@@ -35,9 +35,17 @@
             "id": "a474fe3b40400e39",
             "type": "leaf",
             "state": {
+              "type": "graph",
+              "state": {}
+            }
+          },
+          {
+            "id": "537c94534a8ac2c3",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
-                "file": "Wizardry/Security/role-based access control.md",
+                "file": "Elucidations/Obliviate.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +102,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 553.5026054382324
+    "width": 215.50043487548828
   },
   "right": {
     "id": "ad2f8c353c7f7b58",
@@ -110,7 +118,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Wizardry/Security/role-based access control.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +134,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Wizardry/Security/role-based access control.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,9 +155,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Wizardry/Security/role-based access control.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -174,42 +178,42 @@
   },
   "active": "a474fe3b40400e39",
   "lastOpenFiles": [
-    "Wizardry/Security/Attribute Based Access Control.md",
-    "Wizardry/Security/role-based access control.md",
-    "Wizardry/Security/Authorization.md",
+    "Wizardry/Data Structures & Algorithms/Big O notation.md",
+    "Wizardry/Data Structures & Algorithms/sort.md",
+    "Wizardry/Data Structures & Algorithms/search.md",
+    "Wizardry/Data Structures & Algorithms/Maps.md",
+    "Wizardry/Data Structures & Algorithms/Graphs.md",
+    "Wizardry/Data Structures & Algorithms/Trees.md",
+    "Wizardry/Data Structures & Algorithms/Lists.md",
+    "Wizardry/Data Structures & Algorithms/Arrays.md",
+    "Wizardry/Data Structures & Algorithms/Data Structures & Algorithms.md",
+    "Wizardry/Data Structures & Algorithms",
+    "Elucidations/Transient.md",
+    "Elucidations/Tovsonian Dialectic.md",
+    "Elucidations/Obliviate.md",
+    "Elucidations/prodigious.md",
+    "Elucidations/TLDW.md",
+    "Elucidations/Tansack.md",
+    "Elucidations/sesquipedalian.md",
+    "Elucidations/sagacious.md",
+    "Elucidations/quarelsome.md",
+    "Elucidations/prescience.md",
+    "Elucidations/perspicacious.md",
+    "Elucidations/pedantic.md",
+    "Elucidations/pedant.md",
+    "Elucidations/pedagogue.md",
+    "Elucidations/meagerings.md",
+    "Elucidations/lucre.md",
+    "Elucidations/laurels.md",
     "Wizardy/Security",
     "Wizardy",
-    "Wizardry/Security/Relationship Based Access Control.md",
-    "Wizardry/Security/XSS Prevention.md",
-    "Elucidations/CSRF.md",
-    "Wizardry/Security/Cross-Site Request Forgery (CSRF).md",
-    "Elucidations/exeleutherostomize.md",
-    "Wizardry/Security/Security.md",
     "Wizardry/Security",
-    "Elucidations/Freshly Shorn Zuckhole.md",
-    "Elucidations/iniquitous.md",
-    "Wizardry/Typescript/Infer.md",
-    "Elucidations/bitchery.md",
-    "Elucidations/quarelsome.md",
-    "Elucidations/charlatan.md",
-    "Elucidations/veritable.md",
-    "Elucidations/concurrently.md",
     "concurrently",
-    "Exeleutherostomizations/existential.md",
-    "Elucidations/damsels.md",
-    "Elucidations/lucre.md",
-    "DankStack/Untitled.md",
-    "Elucidations/heuristic.md",
-    "Elucidations/Gallimaufry.md",
-    "Elucidations/floriferous.md",
-    "Elucidations/eschewing.md",
-    "Elucidations/ephemeral.md",
     "publish.css",
     "theme.css",
     "Wizardry/Platforms/Liveblocks",
     "Wizardry/Platforms",
     "Wizardry/Graphs",
-    "Wizardry/Winter Holers",
     "Untitled.canvas"
   ]
 }

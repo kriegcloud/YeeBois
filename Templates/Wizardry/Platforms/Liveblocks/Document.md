@@ -1,0 +1,1 @@
+Liveblocks Document is a set of persisted data stores optimized for real-time collaborative documents: Liveblocks Storage and Liveblocks Yjs.

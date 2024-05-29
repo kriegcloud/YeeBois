@@ -1,2 +1,2 @@
 +
--Directed [[Graphs]] only have edges
+-Directed [[Wizardry/Graphs/Graphs]] only have edges
