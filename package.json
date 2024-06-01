@@ -1,16 +1,25 @@
 {
   "private": true,
   "scripts": {
-    "build": "turbo run build",
-    "clean": "turbo run clean",
+    "build": "turbo build",
+    "clean": "turbo clean && rm -rf node_modules",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "turbo build --filter=docs^... && changeset publish",
+    "ui:add:component": "turbo ui:add --filter=@dank/ui",
+    "prepare": "lefthook install",
     "dev": "turbo run dev",
+    "dev:ui": "turbo dev --experimental-ui",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "lint": "turbo run lint",
+    "lint": "turbo lint",
+    "lint:fix": "turbo lint:fix",
     "test": "turbo run test",
     "typecheck": "turbo run typecheck"
   },
   "devDependencies": {
-    "prettier": "^3.2.5",
+    "@biomejs/biome": "1.7.1",
+    "@changesets/cli": "2.27.1",
+    "lefthook": "1.6.10",
     "turbo": "latest"
   },
   "engines": {
@@ -20,5 +29,6 @@
   "workspaces": [
     "apps/*",
     "packages/*"
-  ]
+  ],
+  "trustedDependencies": ["@biomejs/biome", "esbuild", "lefthook"]
 }

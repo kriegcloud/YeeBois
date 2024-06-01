@@ -1,8 +1,16 @@
 {
-  "extends": "@repo/typescript-config/react-library.json",
+  "extends": "@dank/tsconfig/react-library.json",
   "compilerOptions": {
     "lib": ["dom", "ES2015"],
-    "types": ["jest", "node"]
+    "module": "ESNext",
+    "target": "ES6",
+    "jsx": "react-jsx",
+    "noEmit": true,
+    "types": ["jest", "node"],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
   },
   "include": ["."],
   "exclude": ["dist", "build", "node_modules"]

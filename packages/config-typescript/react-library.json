@@ -6,6 +6,11 @@
     "lib": ["ES2015"],
     "module": "ESNext",
     "target": "ES6",
+    "declaration": true,
+    "composite": false,
+    "sourceMap": true,
+    "declarationMap": true,
+    "incremental": false,
     "jsx": "react-jsx",
     "noEmit": true
   }

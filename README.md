@@ -22,11 +22,11 @@ This Turborepo includes the following packages and apps:
 - `storefront`: a [Next.js](https://nextjs.org/) app
 - `admin`: a [Vite](https://vitejs.dev/) single page app
 - `blog`: a [Remix](https://remix.run/) blog
-- `@repo/eslint-config`: ESLint configurations used throughout the monorepo
-- `@repo/jest-presets`: Jest configurations
-- `@repo/logger`: isomorphic logger (a small wrapper around console.log)
-- `@repo/ui`: a dummy React UI library (which contains `<CounterButton>` and `<Link>` components)
-- `@repo/typescript-config`: tsconfig.json's used throughout the monorepo
+- `@dank/eslint-config`: ESLint configurations used throughout the monorepo
+- `@dank/jest-presets`: Jest configurations
+- `@dank/logger`: isomorphic logger (a small wrapper around console.log)
+- `@dank/ui`: a dummy React UI library (which contains `<CounterButton>` and `<Link>` components)
+- `@dank/tsconfig`: tsconfig.json's used throughout the monorepo
 
 Each package and app is 100% [TypeScript](https://www.typescriptlang.org/).
 

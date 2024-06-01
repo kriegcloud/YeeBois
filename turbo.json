@@ -3,13 +3,15 @@
   "globalDependencies": ["**/.env.*local"],
   "globalEnv": ["PORT"],
   "pipeline": {
+    "ui:add": {},
+    "lint:fix": { "cache": false },
     "build": {
-      // "outputs" are defined in Workspace Configurations: https://turbo.build/repo/docs/core-concepts/monorepos/configuring-workspaces
+      "outputs": ["dist/**", ".next/**", "!.next/cache/**"],
       "dependsOn": ["^build"]
     },
     "test": {
       "outputs": ["coverage/**"],
-      "dependsOn": []
+      "dependsOn": ["build"]
     },
     "lint": {
       "dependsOn": ["^build"]
