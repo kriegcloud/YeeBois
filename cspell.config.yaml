@@ -11,9 +11,34 @@ ignorePaths:
   - .next
   - .astro
   - drizzle
+  - migrations
+  - '**/*.yml'
   - '**/*.svg'
 words:
+  - biomejs
+  - biome
   - acst
+  - tsparticles
+  - fuzzie
+  - CLIENTVAR
+  - Editrix
+  - Algochurn
+  - Aceternity
+  - Renderwork
+  - svgr
+  - infobar
+  - Bois
+  - bois
+  - goup
+  - Fuzzie
+  - fuzzie
+  - lefthook
+  - dbaeumer
+  - applicaiton
+  - subrouters
+  - unauthed
+  - CBFF
+  - automations
   - aest
   - akst
   - astro
@@ -39,6 +64,16 @@ words:
   - compat
   - consts
   - crossorigin
+  - Bios
+  - convo
+  - convos
+  - Ilike
+  - ilike
+  - planetscale
+  - infisical
+  - varchar
+  - autoincrement
+  - warhawk
   - datetime
   - degit
   - Duarte
