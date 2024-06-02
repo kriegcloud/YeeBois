@@ -3,11 +3,26 @@
   "private": true,
   "type": "module",
   "exports": {
-    ".": "./index.ts",
-    "./orm": "./orm.ts",
-    "./schema": "./schema/schema.ts"
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./src/index.ts"
+    },
+    "./orm": {
+      "types": "./dist/orm.d.ts",
+      "default": "./src/orm.ts"
+    },
+    "./schema": {
+      "types": "./dist/schema/schema.d.ts",
+      "default": "./src/schema/schema.ts"
+    },
+    "./shared": {
+      "types": "./dist/schema/shared.d.ts",
+      "default": "./src/schema/shared.ts"
+    }
   },
   "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
     "db:make-migrations": "drizzle-kit generate --config=drizzle.config.ts",
     "db:push": "drizzle-kit push --config=drizzle.config.ts",
     "db:check": "drizzle-kit check --config=drizzle.config.ts",
@@ -22,7 +37,7 @@
     "lint": "biome check .",
     "lint:fix": "biome check . --apply",
     "clean": "rm -rf .turbo && rm -rf node_modules",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit --emitDeclarationOnly false"
   },
   "dependencies": {
     "@dank/tsconfig": "workspace:*",
@@ -37,6 +52,7 @@
   "devDependencies": {
     "drizzle-kit": "0.22.1",
     "tsx": "^4.11.0",
-    "@biomejs/biome": "1.7.1"
+    "@biomejs/biome": "1.7.1",
+    "next-auth": "5.0.0-beta.18"
   }
 }

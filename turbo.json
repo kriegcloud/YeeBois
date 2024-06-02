@@ -6,7 +6,14 @@
     "ui:add": {},
     "lint:fix": { "cache": false },
     "build": {
-      "outputs": ["dist/**", ".next/**", "!.next/cache/**"],
+      "outputs": [
+        ".next/**",
+        "!.next/cache/**",
+        "next-env.d.ts",
+        ".expo/**",
+        ".output/**",
+        ".vercel/output/**"
+      ],
       "dependsOn": ["^build"]
     },
     "test": {
