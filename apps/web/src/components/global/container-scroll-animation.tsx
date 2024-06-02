@@ -8,7 +8,7 @@ export const ContainerScroll = ({
 }: {
   titleComponent: string | React.ReactNode;
 }) => {
-  const containerRef = useRef<any>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
   });
@@ -51,6 +51,7 @@ export const ContainerScroll = ({
   );
 };
 
+// biome-ignore lint/suspicious/noExplicitAny: <explanation>
 export const Header = ({ translate, titleComponent }: any) => {
   return (
     <motion.div
@@ -67,7 +68,6 @@ export const Header = ({ translate, titleComponent }: any) => {
 export const Card = ({
   rotate,
   scale,
-  translate,
 }: {
   // biome-ignore lint/suspicious/noExplicitAny: <explanation>
   rotate: any;
