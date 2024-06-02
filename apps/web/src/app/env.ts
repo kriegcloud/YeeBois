@@ -18,8 +18,8 @@ export const env = createEnv({
    */
   client: {
     NEXT_PUBLIC_NODE_ENV: z
-        .enum(['development', 'test', 'production'])
-        .default('development')
+      .enum(['development', 'test', 'production'])
+      .default('development'),
   },
   /**
    * You can't destruct `process.env` as a regular object in the Next.js edge runtimes (e.g.
