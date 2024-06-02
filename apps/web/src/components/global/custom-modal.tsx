@@ -1,6 +1,6 @@
 import { useModal } from '@/providers/modal-provider';
+import { Button } from '@dank/ui/button';
 import {
-  Button,
   Drawer,
   DrawerClose,
   DrawerContent,
@@ -8,8 +8,7 @@ import {
   DrawerFooter,
   DrawerHeader,
   DrawerTitle,
-} from '@dank/ui';
-
+} from '@dank/ui/drawer';
 import type React from 'react';
 
 type Props = {

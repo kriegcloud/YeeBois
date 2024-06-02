@@ -1,7 +1,7 @@
 import { BillingProvider } from '@/providers/billing-provider';
 import ModalProvider from '@/providers/modal-provider';
 import { ThemeProvider } from '@/providers/theme-provider';
-import { Toaster } from '@dank/ui';
+import { Toaster } from '@dank/ui/toast';
 import type { Metadata } from 'next';
 import { DM_Sans } from 'next/font/google';
 import type { ReactNode } from 'react';

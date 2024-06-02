@@ -1,17 +1,12 @@
 {
-  "extends": "@dank/tsconfig/react-library.json",
+  "extends": ["@dank/tsconfig/orbit-react.json"],
   "compilerOptions": {
-    "lib": ["dom", "ES2015"],
-    "module": "ESNext",
-    "target": "ES6",
-    "jsx": "react-jsx",
-    "noEmit": true,
-    "types": ["jest", "node"],
+    "tsBuildInfoFile": ".tsbuildinfo",
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
     }
   },
-  "include": ["."],
-  "exclude": ["dist", "build", "node_modules"]
+  "include": ["**/*.ts", "**/*.tsx", ".storybook/**/*", "**/*.cjs", "**/*.js"],
+  "exclude": ["dist", "node_modules", "storybook-static"]
 }

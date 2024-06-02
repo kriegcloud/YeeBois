@@ -1,5 +1,5 @@
 'use client';
-import { cn } from '@dank/ui';
+import { cn } from '@dank/ui/cn';
 import { motion } from 'framer-motion';
 import type React from 'react';
 import { SparklesCore } from './sparkles';

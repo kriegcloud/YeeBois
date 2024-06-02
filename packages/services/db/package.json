@@ -1,0 +1,59 @@
+{
+  "name": "@dank/db",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./src/index.ts"
+    },
+    "./orm": {
+      "types": "./dist/orm.d.ts",
+      "default": "./src/orm.ts"
+    },
+    "./schema": {
+      "types": "./dist/schema/schema.d.ts",
+      "default": "./src/schema/schema.ts"
+    },
+    "./shared": {
+      "types": "./dist/schema/shared.d.ts",
+      "default": "./src/schema/shared.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "db:make-migrations": "drizzle-kit generate --config=drizzle.config.ts",
+    "db:push": "drizzle-kit push --config=drizzle.config.ts",
+    "db:check": "drizzle-kit check --config=drizzle.config.ts",
+    "db:clean": "tsx scripts/dbClean.ts",
+    "db:drop": "drizzle-kit drop --config=drizzle.config.ts",
+    "db:drop:r": "drizzle-kit drop --config=drizzle.config.ts",
+    "db:studio": "pnpm drizzle-kit studio --port 3333  --config=drizzle.config.ts",
+    "db:studio:r": "drizzle-kit studio --port 3333  --config=drizzle.config.ts",
+    "db:seed:r": "tsx scripts/seed.ts",
+    "db:migrate": "tsx scripts/migrate.ts",
+    "db:clean:r": "infisical run --env=remote -- tsx scripts/dbClean.ts",
+    "lint": "biome check .",
+    "lint:fix": "biome check . --apply",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
+    "typecheck": "tsc --noEmit --emitDeclarationOnly false"
+  },
+  "dependencies": {
+    "@dank/tsconfig": "workspace:*",
+    "@planetscale/database": "^1.18.0",
+    "@t3-oss/env-nextjs": "^0.10.1",
+    "drizzle-orm": "^0.31.0",
+    "drizzle-zod": "^0.5.1",
+    "mysql2": "^3.10.0",
+    "typeid-js": "^0.7.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "drizzle-kit": "0.22.1",
+    "tsx": "^4.11.0",
+    "@biomejs/biome": "1.7.1",
+    "next-auth": "5.0.0-beta.18"
+  },
+  "version": "0.1.0"
+}

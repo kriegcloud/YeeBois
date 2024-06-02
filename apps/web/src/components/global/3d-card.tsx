@@ -1,6 +1,6 @@
 'use client';
 
-import { cn } from '@dank/ui';
+import { cn } from '@dank/ui/cn';
 import type React from 'react';
 import { createContext, useContext, useEffect, useRef, useState } from 'react';
 
@@ -111,7 +111,6 @@ export const CardItem = ({
   const ref = useRef<HTMLDivElement>(null);
   const [isMouseEntered] = useMouseEnter();
 
-  // biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
   useEffect(() => {
     handleAnimations();
   }, [isMouseEntered]);

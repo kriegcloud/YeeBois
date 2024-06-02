@@ -1,6 +1,6 @@
 'use client';
 
-import { cn } from '@dank/ui';
+import { cn } from '@dank/ui/cn';
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 
@@ -85,7 +85,7 @@ export const InfiniteMovingCards = ({
           pauseOnHover && 'hover:[animation-play-state:paused]',
         )}
       >
-        {items.map((item, idx) => (
+        {items.map((item) => (
           <Image
             width={170}
             height={1}

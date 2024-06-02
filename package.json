@@ -1,16 +1,20 @@
 {
   "private": true,
+  "type": "module",
   "scripts": {
     "build": "dotenv -e .env.local -- turbo build",
-    "clean": "turbo clean && rm -rf node_modules",
-    "changeset": "changeset",
+    "clean": "rimraf --glob **/node_modules **/dist **/.turbo **/.next **/.astro **/storybook-static bun.lockb **/.tsbuildinfo **/playwright-report **/test-results",
+    "release": "turbo run build lint typecheck && changeset version && changeset publish",
+    "reset:changelog": "rimraf --glob **/CHANGELOG.md",
+    "reset:versions": "bun run ./scripts/reset-versions",
+    "lint:md": "markdownlint \"**/*.md\" \".github/**/*.md\" --ignore node_modules",
+    "commit": "git-cz",
+    "lint:spell": "cspell \"**\"",
     "version-packages": "changeset version",
-    "release": "turbo build --filter=docs^... && changeset publish",
     "ui:add:component": "turbo ui:add --filter=@dank/ui",
     "prepare": "lefthook install",
     "dev": "turbo run dev",
     "dev:ui": "turbo dev --experimental-ui",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "lint": "turbo lint",
     "lint:fix": "turbo lint:fix",
     "test": "turbo run test",
@@ -26,18 +30,53 @@
     "docker:exec:db": "docker compose exec -it db '/bin/bash'",
     "with-env": "dotenv -e .env.local --"
   },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
+  },
+  "lint-staged": {
+    "*": ["cspell --no-must-find-files", "prettier --list-different"],
+    "**/*.{ts,tsx,js,jsx,cjs,mjs}": ["eslint"],
+    "**/*.{md,mdx}": ["markdownlint"]
+  },
   "devDependencies": {
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "@commitlint/cz-commitlint": "^19.2.0",
+    "@dank/tsconfig": "workspace:^",
     "@biomejs/biome": "1.7.1",
     "@changesets/cli": "2.27.1",
     "lefthook": "1.6.10",
     "turbo": "latest",
     "dotenv": "^16.4.5",
-    "dotenv-cli": "^7.4.2"
+    "@playwright/test": "^1.44.1",
+    "dotenv-cli": "^7.4.2",
+    "prettier": "^3.2.5",
+    "prettier-plugin-astro": "^0.14.0",
+    "prettier-plugin-curly": "^0.2.1",
+    "prettier-plugin-packagejson": "^2.5.0",
+    "@ianvs/prettier-plugin-sort-imports": "^4.2.1",
+    "rimraf": "^5.0.7",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.5",
+    "markdownlint": "^0.34.0",
+    "markdownlint-cli": "^0.41.0",
+    "commitizen": "^4.3.0",
+    "cspell": "^8.8.3"
   },
   "engines": {
     "node": ">=18"
   },
   "packageManager": "bun@1.1.10",
-  "workspaces": ["apps/*", "packages/*"],
-  "trustedDependencies": ["@biomejs/biome", "esbuild", "lefthook"]
+  "workspaces": [
+    "apps/*",
+    "packages/ui",
+    "packages/config/*",
+    "packages/services/*",
+    "packages/utils/*",
+    "packages/assets"
+  ],
+  "trustedDependencies": ["@biomejs/biome", "esbuild", "lefthook"],
+  "version": "0.1.0"
 }

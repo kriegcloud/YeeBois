@@ -1,5 +1,5 @@
 'use client';
-import { Input } from '@dank/ui';
+import { Input } from '@dank/ui/input';
 import { Book, Headphones, Search } from 'lucide-react';
 import React, { useEffect } from 'react';
 
@@ -9,7 +9,7 @@ import {
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from '@dank/ui';
+} from '@dank/ui/tooltip';
 
 const InfoBar = () => {
   const { credits, tier } = useBilling();

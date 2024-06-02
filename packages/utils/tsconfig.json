@@ -1,8 +1,0 @@
-{
-  "extends": "@dank/tsconfig/react-library.json",
-  "compilerOptions": {
-    "verbatimModuleSyntax": false
-  },
-  "include": ["."],
-  "exclude": ["dist", "build", "node_modules"]
-}

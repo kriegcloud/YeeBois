@@ -1,0 +1,34 @@
+{
+  "name": "@dank/tailwind",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Tailwindcss preset for YeeBois workspace",
+  "license": "MIT",
+  "author": "Bois",
+  "type": "module",
+  "exports": {
+    ".": "./src/preset.ts"
+  },
+  "scripts": {
+    "lint": "biome check .",
+    "lint:fix": "biome check . --apply",
+    "clean": "rm -rf .turbo && rm -rf node_modules",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "@radix-ui/colors": "^3.0.0",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/container-queries": "^0.1.1",
+    "@tailwindcss/forms": "^0.5.7",
+    "@tailwindcss/typography": "^0.5.13",
+    "tailwindcss": "^3.4.3",
+    "tailwindcss-animate": "^1.0.7",
+    "windy-radix-palette": "2.0.0-beta.7",
+    "windy-radix-typography": "1.0.0-beta.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.7.1",
+    "@dank/tsconfig": "workspace:^",
+    "@types/node": "^20.12.12"
+  }
+}
