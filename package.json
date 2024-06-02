@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "build": "turbo build",
+    "build": "dotenv -e .env.local -- turbo build",
     "clean": "turbo clean && rm -rf node_modules",
     "changeset": "changeset",
     "version-packages": "changeset version",
@@ -14,21 +14,30 @@
     "lint": "turbo lint",
     "lint:fix": "turbo lint:fix",
     "test": "turbo run test",
-    "typecheck": "turbo run typecheck"
+    "typecheck": "turbo run typecheck",
+    "db:push": "dotenv -e .env.local -- pnpm --dir packages/database db:push",
+    "db:studio": "dotenv -e .env.local -- turbo run db:studio",
+    "db:make-migrations": "dotenv -e .env.local -- turbo run db:make-migrations",
+    "db:migrate": "dotenv -e .env.local -- turbo run db:migrate",
+    "db:check": "dotenv -e .env.local -- turbo run db:make-migrations",
+    "db:drop": "dotenv -e .env.local -- turbo run db:drop",
+    "docker:nuke": "docker compose down && docker system prune -a -f && docker volume prune -a -f",
+    "docker:up": "docker compose up -d",
+    "docker:exec:db": "docker compose exec -it db '/bin/bash'",
+    "with-env": "dotenv -e .env.local --"
   },
   "devDependencies": {
     "@biomejs/biome": "1.7.1",
     "@changesets/cli": "2.27.1",
     "lefthook": "1.6.10",
-    "turbo": "latest"
+    "turbo": "latest",
+    "dotenv": "^16.4.5",
+    "dotenv-cli": "^7.4.2"
   },
   "engines": {
     "node": ">=18"
   },
   "packageManager": "bun@1.1.10",
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
+  "workspaces": ["apps/*", "packages/*"],
   "trustedDependencies": ["@biomejs/biome", "esbuild", "lefthook"]
 }

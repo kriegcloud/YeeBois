@@ -1,5 +1,5 @@
 import type { InferInsertModel, InferSelectModel } from 'drizzle-orm';
-import {accounts} from "./table";
+import { accounts } from './table';
 
 export type AccountMetaBonus = {
   item: 'unin';

@@ -1,2 +1,2 @@
-export * from "./iam/shared";
-export * from "./org/shared";
+export * from './iam/shared';
+export * from './org/shared';

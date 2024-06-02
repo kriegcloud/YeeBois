@@ -1,8 +1,7 @@
 {
   "extends": "@dank/tsconfig/base.json",
   "compilerOptions": {
-    "target": "es2017",
-    "tsBuildInfoFile": "node_modules/.cache/tsbuildinfo.json"
+    "target": "es2017"
   },
   "include": [".", "*.ts"],
   "exclude": ["node_modules"]

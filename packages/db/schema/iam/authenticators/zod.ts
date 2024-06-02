@@ -1,5 +1,5 @@
-import { createInsertSchema, createSelectSchema } from "drizzle-zod";
-import { authenticators } from "./table";
+import { createInsertSchema, createSelectSchema } from 'drizzle-zod';
+import { authenticators } from './table';
 
 export const zInsertAuthenticators = createInsertSchema(authenticators);
 

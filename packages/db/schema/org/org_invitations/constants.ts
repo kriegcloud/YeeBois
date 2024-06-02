@@ -1,4 +1,3 @@
+export const ORG_ROLES = ['admin', 'member'] as const;
 
-export const ORG_ROLES = ["admin", "member"] as const;
-
-export type OrgRole = typeof ORG_ROLES[number];
+export type OrgRole = (typeof ORG_ROLES)[number];

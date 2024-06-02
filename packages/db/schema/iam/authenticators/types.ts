@@ -1,5 +1,5 @@
 import type { InferInsertModel, InferSelectModel } from 'drizzle-orm';
-import {authenticators} from "./table";
+import { authenticators } from './table';
 
 export type Authenticators = InferSelectModel<typeof authenticators>;
 

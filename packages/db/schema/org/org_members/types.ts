@@ -1,5 +1,5 @@
 import type { InferInsertModel, InferSelectModel } from 'drizzle-orm';
-import {orgMembers} from "./table";
+import { orgMembers } from './table';
 
 export type OrgMembers = InferSelectModel<typeof orgMembers>;
 

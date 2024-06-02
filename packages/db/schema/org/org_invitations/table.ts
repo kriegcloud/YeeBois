@@ -1,18 +1,18 @@
+import { relations } from 'drizzle-orm';
 import {
-  mysqlTable,
-  serial,
-  varchar,
-  timestamp,
   index,
   mysqlEnum,
+  mysqlTable,
+  serial,
+  timestamp,
   uniqueIndex,
+  varchar,
 } from 'drizzle-orm/mysql-core';
-import { relations } from 'drizzle-orm';
 import { foreignKey, publicId } from '../../abs';
+import { orgMemberProfiles } from '../org_member_profiles/table';
+import { orgMembers } from '../org_members/table';
 import { orgs } from '../orgs/table';
 import { ORG_ROLES } from './constants';
-import { orgMembers} from "../org_members/table";
-import {orgMemberProfiles} from "../org_member_profiles/table";
 
 export const orgInvitations = mysqlTable(
   'org_invitations',

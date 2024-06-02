@@ -7,5 +7,5 @@ export default {
   dialect: 'mysql',
   dbCredentials: {
     url: env.DATABASE_URL,
-  }
+  },
 } satisfies Config;

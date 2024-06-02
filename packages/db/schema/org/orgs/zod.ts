@@ -1,5 +1,5 @@
-import { createInsertSchema, createSelectSchema } from "drizzle-zod";
-import { orgs } from "./table";
+import { createInsertSchema, createSelectSchema } from 'drizzle-zod';
+import { orgs } from './table';
 
 export const zInsertOrgs = createInsertSchema(orgs);
 

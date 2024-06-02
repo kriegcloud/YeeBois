@@ -1,2 +1,2 @@
-export * from "./iam/schema";
-export * from "./org/schema"
+export * from './iam/schema';
+export * from './org/schema';

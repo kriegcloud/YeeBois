@@ -4,7 +4,7 @@ import { createConnection } from 'mysql2/promise';
 import { env } from '../env';
 
 const connection = await createConnection({
-    uri: env.DATABASE_URL
+  uri: env.DATABASE_URL,
 });
 const db = drizzle(connection);
 

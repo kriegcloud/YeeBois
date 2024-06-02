@@ -1,5 +1,5 @@
 import type { InferInsertModel, InferSelectModel } from 'drizzle-orm';
-import {sessions} from "./table";
+import { sessions } from './table';
 
 export type Sessions = InferSelectModel<typeof sessions>;
 
