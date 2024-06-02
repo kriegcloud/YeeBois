@@ -19,6 +19,9 @@
       "recommended": true,
       "correctness": {
         "noUndeclaredVariables": "warn"
+      },
+      "suspicious": {
+        "noExplicitAny": "warn"
       }
     }
   },

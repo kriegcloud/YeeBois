@@ -69,8 +69,11 @@ export const Card = ({
   scale,
   translate,
 }: {
+  // biome-ignore lint/suspicious/noExplicitAny: <explanation>
   rotate: any;
+  // biome-ignore lint/suspicious/noExplicitAny: <explanation>
   scale: any;
+  // biome-ignore lint/suspicious/noExplicitAny: <explanation>
   translate: any;
 }) => {
   return (

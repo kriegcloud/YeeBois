@@ -8,7 +8,7 @@ type Props = {
 const Payment = ({ selected }: Props) => {
   return (
     // biome-ignore lint/a11y/noSvgWithoutTitle: <explanation>
-<svg
+    <svg
       width="24"
       height="24"
       viewBox="0 0 24 24"

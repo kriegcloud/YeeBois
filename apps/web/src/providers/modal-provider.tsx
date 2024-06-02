@@ -1,6 +1,6 @@
 'use client';
 import { createContext, useContext, useEffect, useState } from 'react';
-import type { ReactNode, FC } from 'react';
+import type { FC, ReactNode } from 'react';
 interface ModalProviderProps {
   children: ReactNode;
 }

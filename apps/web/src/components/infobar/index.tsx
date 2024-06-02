@@ -3,13 +3,13 @@ import { Input } from '@dank/ui';
 import { Book, Headphones, Search } from 'lucide-react';
 import React, { useEffect } from 'react';
 
+import { useBilling } from '@/providers/billing-provider';
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
 } from '@dank/ui';
-import { useBilling } from '@/providers/billing-provider';
 
 const InfoBar = () => {
   const { credits, tier } = useBilling();
