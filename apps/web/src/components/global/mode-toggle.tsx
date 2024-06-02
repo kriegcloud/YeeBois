@@ -5,12 +5,13 @@ import { useTheme } from 'next-themes';
 import * as React from 'react';
 
 import {
-  Button,
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from '@dank/ui';
+} from '@dank/ui/dropdown-menu';
+
+import { Button } from '@dank/ui/button';
 
 export function ModeToggle() {
   const { setTheme } = useTheme();

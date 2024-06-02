@@ -1,0 +1,9 @@
+{
+  "name": "@dank/assets",
+  "version": "0.0.0",
+  "private": true,
+  "description": "YeeBois's assets package",
+  "license": "MIT",
+  "author": "YeeBois",
+  "files": ["**/*"]
+}

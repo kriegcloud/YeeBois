@@ -1,5 +1,5 @@
 {
-  "prettier.enable": true,
+  "prettier.enable": false,
   "eslint.enable": false,
   "[javascriptreact]": {
     "editor.defaultFormatter": "biomejs.biome"

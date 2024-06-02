@@ -1,0 +1,7 @@
+{
+  "extends": ["@dank/tsconfig/orbit-base.json"],
+  "compilerOptions": {
+    "tsBuildInfoFile": ".tsbuildinfo"
+  },
+  "include": ["**/*.ts", "**/*.js"]
+}

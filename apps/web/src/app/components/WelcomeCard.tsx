@@ -1,4 +1,4 @@
-import { Button } from '@dank/ui';
+import { Button } from '@dank/ui/button';
 import {
   Card,
   CardContent,
@@ -6,7 +6,7 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from '@dank/ui';
+} from '@dank/ui/card';
 
 export default function WelcomeCard() {
   return (

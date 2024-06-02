@@ -1,12 +1,11 @@
 'use client';
-import type { Container, Engine } from '@tsparticles/engine';
+import type { Container } from '@tsparticles/engine';
 import Particles, { initParticlesEngine } from '@tsparticles/react';
 import { loadSlim } from '@tsparticles/slim';
-import type { NextPage } from 'next';
 import React from 'react';
 import { useEffect, useState } from 'react';
 
-import { cn } from '@dank/ui';
+import { cn } from '@dank/ui/cn';
 import { motion, useAnimation } from 'framer-motion';
 
 type ParticlesProps = {

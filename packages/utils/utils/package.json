@@ -1,0 +1,38 @@
+{
+  "name": "@dank/utils",
+  "version": "0.2.1",
+  "private": true,
+  "description": "Common utilities for OrbitKit",
+  "license": "MIT",
+  "author": "OrbitKit",
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    "./filesystem": {
+      "types": "./dist/filesystem.d.ts",
+      "default": "./dist/filesystem.js"
+    },
+    "./url": {
+      "types": "./dist/url.d.ts",
+      "default": "./dist/url.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "biome check .",
+    "lint:fix": "biome check . --apply",
+    "typecheck": "tsc",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist && rm -rf .tsup"
+  },
+  "dependencies": {
+    "pkg-types": "^1.1.1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.7.1",
+    "@microsoft/api-extractor": "^7.44.1",
+    "@dank/tsconfig": "workspace:^",
+    "@types/node": "^20.12.12",
+    "tsup": "^8.0.2"
+  }
+}

@@ -6,7 +6,7 @@ import Payment from '@/components/icons/payment';
 import Settings from '@/components/icons/settings';
 import Workflows from '@/components/icons/workflows';
 
-export const clients = [...new Array(10)].map((client, index) => ({
+export const clients = [...new Array(10)].map((_client, index) => ({
   href: `/${index + 1}.png`,
 }));
 

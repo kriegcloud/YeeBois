@@ -5,7 +5,7 @@ import { InfiniteMovingCards } from '@/components/global/infinite-moving-cards';
 import { LampComponent } from '@/components/global/lamp';
 import Navbar from '@/components/global/navbar';
 import { clients, products } from '@/lib/constants';
-import { Button } from '@dank/ui';
+import { Button } from '@dank/ui/button';
 import { CheckIcon } from 'lucide-react';
 
 export default function Home() {

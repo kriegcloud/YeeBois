@@ -1,5 +1,8 @@
 {
   "$schema": "https://biomejs.dev/schemas/1.6.4/schema.json",
+  "files": {
+    "ignore": [".tsup/**"]
+  },
   "formatter": {
     "indentStyle": "space",
     "indentWidth": 2,
@@ -16,11 +19,19 @@
   "linter": {
     "enabled": true,
     "rules": {
+      "a11y": {
+        "useAriaPropsForRole": "off"
+      },
+      "complexity": {
+        "useLiteralKeys": "off"
+      },
       "recommended": true,
       "correctness": {
-        "noUndeclaredVariables": "warn"
+        "noUndeclaredVariables": "off",
+        "useExhaustiveDependencies": "off"
       },
       "suspicious": {
+        "noArrayIndexKey": "off",
         "noExplicitAny": "warn"
       },
       "style": {

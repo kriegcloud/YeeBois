@@ -17,8 +17,7 @@ type ModalContextType = {
 export const ModalContext = createContext<ModalContextType>({
   data: {},
   isOpen: false,
-  // biome-ignore lint/suspicious/noExplicitAny: <explanation>
-  setOpen: (modal: ReactNode, fetchData?: () => Promise<any>) => {},
+  setOpen: () => {},
   setClose: () => {},
 });
 

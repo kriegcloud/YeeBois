@@ -1,12 +1,12 @@
 'use client';
 import { menuOptions } from '@/lib/constants';
+import { Separator } from '@dank/ui/separator';
 import {
-  Separator,
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from '@dank/ui';
+} from '@dank/ui/tooltip';
 import clsx from 'clsx';
 import { Database, GitBranch, LucideMousePointerClick } from 'lucide-react';
 import Link from 'next/link';
