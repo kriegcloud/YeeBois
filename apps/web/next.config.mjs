@@ -1,4 +1,8 @@
-// @ts-check
+import { fileURLToPath } from 'node:url';
+import createJiti from 'jiti';
+
+// Import env files to validate at build time. Use jiti so we can load .ts files in here.
+// createJiti(fileURLToPath(import.meta.url))('./src/app/env');
 import bundleAnalyzer from '@next/bundle-analyzer';
 
 const withBundleAnalyzer = bundleAnalyzer({
@@ -7,7 +11,7 @@ const withBundleAnalyzer = bundleAnalyzer({
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  transpilePackages: ['@dank/ui'],
+  transpilePackages: ['@dank/ui', '@dank/db', '@dank/auth', '@dank/utils'],
   reactStrictMode: true,
   experimental: {
     turbo: {

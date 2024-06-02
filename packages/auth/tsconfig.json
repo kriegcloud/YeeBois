@@ -1,0 +1,8 @@
+{
+  "extends": "@dank/tsconfig/base-internal.json",
+  "compilerOptions": {
+    "tsBuildInfoFile": "node_modules/.cache/tsbuildinfo.json"
+  },
+  "include": ["src", "*.ts", "src/env.ts"],
+  "exclude": ["node_modules"]
+}

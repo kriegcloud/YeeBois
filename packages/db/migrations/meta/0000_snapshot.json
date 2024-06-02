@@ -1,140 +1,56 @@
 {
   "version": "5",
   "dialect": "mysql",
-  "id": "9ba03ac6-170c-446b-a39f-cda7cbbbd5b4",
+  "id": "b4ed0589-3b26-4897-b8d4-6e2ad3cad2fe",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "tables": {
-    "account_credentials": {
-      "name": "account_credentials",
+    "authenticator": {
+      "name": "authenticator",
       "columns": {
-        "id": {
-          "name": "id",
-          "type": "serial",
-          "primaryKey": false,
-          "notNull": true,
-          "autoincrement": true
-        },
-        "account_id": {
-          "name": "account_id",
-          "type": "bigint unsigned",
-          "primaryKey": false,
-          "notNull": true,
-          "autoincrement": false
-        },
-        "password_hash": {
-          "name": "password_hash",
-          "type": "varchar(255)",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
-        },
-        "two_factor_secret": {
-          "name": "two_factor_secret",
-          "type": "varchar(255)",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
-        },
-        "two_factor_enabled": {
-          "name": "two_factor_enabled",
-          "type": "boolean",
-          "primaryKey": false,
-          "notNull": true,
-          "autoincrement": false,
-          "default": false
-        },
-        "recovery_code": {
-          "name": "recovery_code",
-          "type": "varchar(256)",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
-        }
-      },
-      "indexes": {
-        "account_id_idx": {
-          "name": "account_id_idx",
-          "columns": ["account_id"],
-          "isUnique": false
-        }
-      },
-      "foreignKeys": {},
-      "compositePrimaryKeys": {
-        "account_credentials_id": {
-          "name": "account_credentials_id",
-          "columns": ["id"]
-        }
-      },
-      "uniqueConstraints": {}
-    },
-    "authenticators": {
-      "name": "authenticators",
-      "columns": {
-        "id": {
-          "name": "id",
-          "type": "serial",
-          "primaryKey": false,
-          "notNull": true,
-          "autoincrement": true
-        },
-        "public_id": {
-          "name": "public_id",
-          "type": "char(29)",
-          "primaryKey": false,
-          "notNull": true,
-          "autoincrement": false
-        },
-        "account_credential_id": {
-          "name": "account_credential_id",
-          "type": "bigint unsigned",
-          "primaryKey": false,
-          "notNull": true,
-          "autoincrement": false
-        },
-        "account_id": {
-          "name": "account_id",
-          "type": "bigint unsigned",
-          "primaryKey": false,
-          "notNull": true,
-          "autoincrement": false
-        },
-        "nickname": {
-          "name": "nickname",
-          "type": "varchar(64)",
-          "primaryKey": false,
-          "notNull": true,
-          "autoincrement": false
-        },
-        "credential_id": {
-          "name": "credential_id",
+        "credentialID": {
+          "name": "credentialID",
           "type": "varchar(255)",
           "primaryKey": false,
           "notNull": true,
           "autoincrement": false
         },
-        "credential_public_key": {
-          "name": "credential_public_key",
-          "type": "text",
+        "userId": {
+          "name": "userId",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "providerAccountId": {
+          "name": "providerAccountId",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "credentialPublicKey": {
+          "name": "credentialPublicKey",
+          "type": "varchar(255)",
           "primaryKey": false,
           "notNull": true,
           "autoincrement": false
         },
         "counter": {
           "name": "counter",
-          "type": "bigint unsigned",
+          "type": "int",
           "primaryKey": false,
           "notNull": true,
           "autoincrement": false
         },
-        "credential_device_type": {
-          "name": "credential_device_type",
-          "type": "varchar(32)",
+        "credentialDeviceType": {
+          "name": "credentialDeviceType",
+          "type": "varchar(255)",
           "primaryKey": false,
           "notNull": true,
           "autoincrement": false
         },
-        "credential_backed_up": {
-          "name": "credential_backed_up",
+        "credentialBackedUp": {
+          "name": "credentialBackedUp",
           "type": "boolean",
           "primaryKey": false,
           "notNull": true,
@@ -142,162 +58,198 @@
         },
         "transports": {
           "name": "transports",
-          "type": "json",
+          "type": "varchar(255)",
           "primaryKey": false,
           "notNull": false,
           "autoincrement": false
-        },
-        "created_at": {
-          "name": "created_at",
-          "type": "timestamp",
-          "primaryKey": false,
-          "notNull": true,
-          "autoincrement": false
         }
       },
-      "indexes": {
-        "provider_account_id_idx": {
-          "name": "provider_account_id_idx",
-          "columns": ["account_credential_id"],
-          "isUnique": false
-        },
-        "credential_id_idx": {
-          "name": "credential_id_idx",
-          "columns": ["credential_id"],
-          "isUnique": true
+      "indexes": {},
+      "foreignKeys": {
+        "authenticator_userId_user_id_fk": {
+          "name": "authenticator_userId_user_id_fk",
+          "tableFrom": "authenticator",
+          "tableTo": "user",
+          "columnsFrom": ["userId"],
+          "columnsTo": ["id"],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
         }
       },
-      "foreignKeys": {},
       "compositePrimaryKeys": {
-        "authenticators_id": {
-          "name": "authenticators_id",
-          "columns": ["id"]
+        "authenticator_userId_credentialID_pk": {
+          "name": "authenticator_userId_credentialID_pk",
+          "columns": ["userId", "credentialID"]
         }
       },
-      "uniqueConstraints": {}
+      "uniqueConstraints": {
+        "authenticator_credentialID_unique": {
+          "name": "authenticator_credentialID_unique",
+          "columns": ["credentialID"]
+        }
+      }
     },
     "sessions": {
       "name": "sessions",
       "columns": {
-        "id": {
-          "name": "id",
-          "type": "serial",
-          "primaryKey": false,
-          "notNull": true,
-          "autoincrement": true
-        },
-        "public_id": {
-          "name": "public_id",
-          "type": "char(29)",
-          "primaryKey": false,
-          "notNull": true,
-          "autoincrement": false
-        },
-        "account_id": {
-          "name": "account_id",
-          "type": "bigint unsigned",
-          "primaryKey": false,
-          "notNull": true,
-          "autoincrement": false
-        },
-        "account_public_id": {
-          "name": "account_public_id",
-          "type": "char(28)",
-          "primaryKey": false,
-          "notNull": true,
-          "autoincrement": false
-        },
-        "session_token": {
-          "name": "session_token",
+        "sessionToken": {
+          "name": "sessionToken",
           "type": "varchar(255)",
           "primaryKey": false,
           "notNull": true,
           "autoincrement": false
         },
-        "device": {
-          "name": "device",
+        "userId": {
+          "name": "userId",
           "type": "varchar(255)",
           "primaryKey": false,
           "notNull": true,
           "autoincrement": false
         },
-        "os": {
-          "name": "os",
-          "type": "varchar(255)",
-          "primaryKey": false,
-          "notNull": true,
-          "autoincrement": false
-        },
-        "expires_at": {
-          "name": "expires_at",
-          "type": "timestamp",
-          "primaryKey": false,
-          "notNull": true,
-          "autoincrement": false
-        },
-        "created_at": {
-          "name": "created_at",
+        "expires": {
+          "name": "expires",
           "type": "timestamp",
           "primaryKey": false,
           "notNull": true,
           "autoincrement": false
         }
       },
-      "indexes": {
-        "account_id_idx": {
-          "name": "account_id_idx",
-          "columns": ["account_id"],
-          "isUnique": false
-        },
-        "session_token_idx": {
-          "name": "session_token_idx",
-          "columns": ["session_token"],
-          "isUnique": true
-        },
-        "expires_at_idx": {
-          "name": "expires_at_idx",
-          "columns": ["expires_at"],
-          "isUnique": false
+      "indexes": {},
+      "foreignKeys": {
+        "sessions_userId_user_id_fk": {
+          "name": "sessions_userId_user_id_fk",
+          "tableFrom": "sessions",
+          "tableTo": "user",
+          "columnsFrom": ["userId"],
+          "columnsTo": ["id"],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
         }
       },
-      "foreignKeys": {},
       "compositePrimaryKeys": {
-        "sessions_id": {
-          "name": "sessions_id",
-          "columns": ["id"]
+        "sessions_sessionToken": {
+          "name": "sessions_sessionToken",
+          "columns": ["sessionToken"]
         }
       },
       "uniqueConstraints": {}
     },
-    "accounts": {
-      "name": "accounts",
+    "account": {
+      "name": "account",
+      "columns": {
+        "userId": {
+          "name": "userId",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "type": {
+          "name": "type",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "provider": {
+          "name": "provider",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "providerAccountId": {
+          "name": "providerAccountId",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "refresh_token": {
+          "name": "refresh_token",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "access_token": {
+          "name": "access_token",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "expires_at": {
+          "name": "expires_at",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "token_type": {
+          "name": "token_type",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "scope": {
+          "name": "scope",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "id_token": {
+          "name": "id_token",
+          "type": "varchar(2048)",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "session_state": {
+          "name": "session_state",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "account_userId_user_id_fk": {
+          "name": "account_userId_user_id_fk",
+          "tableFrom": "account",
+          "tableTo": "user",
+          "columnsFrom": ["userId"],
+          "columnsTo": ["id"],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {
+        "account_provider_providerAccountId_pk": {
+          "name": "account_provider_providerAccountId_pk",
+          "columns": ["provider", "providerAccountId"]
+        }
+      },
+      "uniqueConstraints": {}
+    },
+    "user": {
+      "name": "user",
       "columns": {
         "id": {
           "name": "id",
-          "type": "serial",
+          "type": "varchar(255)",
           "primaryKey": false,
           "notNull": true,
-          "autoincrement": true
+          "autoincrement": false
         },
         "public_id": {
           "name": "public_id",
           "type": "char(28)",
           "primaryKey": false,
           "notNull": true,
-          "autoincrement": false
-        },
-        "username": {
-          "name": "username",
-          "type": "varchar(32)",
-          "primaryKey": false,
-          "notNull": true,
-          "autoincrement": false
-        },
-        "metadata": {
-          "name": "metadata",
-          "type": "json",
-          "primaryKey": false,
-          "notNull": false,
           "autoincrement": false
         },
         "created_at": {
@@ -350,25 +302,77 @@
           "notNull": true,
           "autoincrement": false,
           "default": true
-        }
-      },
-      "indexes": {
-        "public_id_idx": {
-          "name": "public_id_idx",
-          "columns": ["public_id"],
-          "isUnique": true
         },
-        "username_idx": {
-          "name": "username_idx",
-          "columns": ["username"],
-          "isUnique": true
+        "name": {
+          "name": "name",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "email": {
+          "name": "email",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "emailVerified": {
+          "name": "emailVerified",
+          "type": "timestamp(3)",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "image": {
+          "name": "image",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
         }
       },
+      "indexes": {},
       "foreignKeys": {},
       "compositePrimaryKeys": {
-        "accounts_id": {
-          "name": "accounts_id",
+        "user_id": {
+          "name": "user_id",
           "columns": ["id"]
+        }
+      },
+      "uniqueConstraints": {}
+    },
+    "verificationToken": {
+      "name": "verificationToken",
+      "columns": {
+        "identifier": {
+          "name": "identifier",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "token": {
+          "name": "token",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "expires": {
+          "name": "expires",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {
+        "verificationToken_identifier_token_pk": {
+          "name": "verificationToken_identifier_token_pk",
+          "columns": ["identifier", "token"]
         }
       },
       "uniqueConstraints": {}
@@ -509,11 +513,11 @@
           "notNull": true,
           "autoincrement": false
         },
-        "account_id": {
-          "name": "account_id",
-          "type": "bigint unsigned",
+        "user_id": {
+          "name": "user_id",
+          "type": "varchar(255)",
           "primaryKey": false,
-          "notNull": false,
+          "notNull": true,
           "autoincrement": false
         },
         "org_id": {
@@ -574,7 +578,7 @@
         },
         "account_id_idx": {
           "name": "account_id_idx",
-          "columns": ["account_id"],
+          "columns": ["user_id"],
           "isUnique": false
         },
         "org_id_idx": {
@@ -584,7 +588,7 @@
         },
         "org_account_idx": {
           "name": "org_account_idx",
-          "columns": ["org_id", "account_id"],
+          "columns": ["org_id", "user_id"],
           "isUnique": true
         }
       },
@@ -628,11 +632,11 @@
           "notNull": false,
           "autoincrement": false
         },
-        "account_id": {
-          "name": "account_id",
-          "type": "bigint unsigned",
+        "user_id": {
+          "name": "user_id",
+          "type": "varchar(255)",
           "primaryKey": false,
-          "notNull": false,
+          "notNull": true,
           "autoincrement": false
         },
         "first_name": {
@@ -686,7 +690,7 @@
         },
         "account_id_idx": {
           "name": "account_id_idx",
-          "columns": ["account_id"],
+          "columns": ["user_id"],
           "isUnique": false
         }
       },
@@ -732,7 +736,7 @@
         },
         "owner_id": {
           "name": "owner_id",
-          "type": "bigint unsigned",
+          "type": "varchar(255)",
           "primaryKey": false,
           "notNull": true,
           "autoincrement": false

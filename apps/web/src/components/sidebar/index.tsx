@@ -1,5 +1,5 @@
 'use client';
-import { menuOptions } from '@/lib/constants.ts';
+import { menuOptions } from '@/lib/constants';
 import {
   Separator,
   Tooltip,
