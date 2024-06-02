@@ -1,4 +1,6 @@
+import { useModal } from '@/providers/modal-provider';
 import {
+  Button,
   Drawer,
   DrawerClose,
   DrawerContent,
@@ -6,9 +8,7 @@ import {
   DrawerFooter,
   DrawerHeader,
   DrawerTitle,
-  Button
 } from '@dank/ui';
-import { useModal } from '@/providers/modal-provider';
 
 import type React from 'react';
 
