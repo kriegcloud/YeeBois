@@ -24,8 +24,30 @@
       "cache": false,
       "persistent": true
     },
+    "db:migrate": {
+      "cache": false
+    },
+    "db:make-migrations": {
+      "cache": false
+    },
+    "db:push": {
+      "cache": false
+    },
+    "db:drop": {
+      "cache": false
+    },
+    "db:studio": {
+      "cache": false
+    },
+    "db:studio:r": {
+      "cache": false
+    },
+    "docker:up": {
+      "cache": false
+    },
     "clean": {
       "cache": false
     }
-  }
+  },
+  "globalDotEnv": [".env.local"]
 }
