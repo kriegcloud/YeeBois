@@ -5,7 +5,7 @@
   "sideEffects": false,
   "type": "module",
   "exports": {
-    "./playwright.config": {
+    "./dankPlaywright": {
       "types": "./dist/playwright.config.d.ts",
       "default": "./dist/playwright.config.js"
     }
