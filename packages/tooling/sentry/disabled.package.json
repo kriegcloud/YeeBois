@@ -1,0 +1,36 @@
+{
+  "private": true,
+  "name": "@dank/sentry",
+  "version": "0.0.0",
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    "./dankSentryClient": {
+      "types": "./dist/sentry.client.config.d.ts",
+      "default": "./dist/sentry.client.config.js"
+    },
+    "./dankSentryEdge": {
+      "types": "./dist/sentry.edge.config.d.ts",
+      "default": "./dist/sentry.edge.config.js"
+    },
+    "./dankSentryServer": {
+      "types": "./dist/sentry.server.config.d.ts",
+      "default": "./dist/sentry.server.config.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "biome check .",
+    "lint:fix": "biome check . --apply",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
+    "typecheck": "tsc"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.7.1",
+    "@dank/tsconfig": "workspace:^",
+    "@sentry/integrations": "^7.114.0",
+    "@sentry/nextjs": "^8.7.0",
+    "tsup": "^8.0.2"
+  }
+}

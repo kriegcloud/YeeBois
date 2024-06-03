@@ -71,7 +71,7 @@
   "workspaces": [
     "apps/*",
     "packages/ui",
-    "packages/config/*",
+    "packages/tooling/*",
     "packages/modules/*",
     "packages/utils/*",
     "packages/assets"
