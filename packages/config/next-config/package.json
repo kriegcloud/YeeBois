@@ -1,0 +1,49 @@
+{
+  "private": true,
+  "name": "@dank/next-config",
+  "version": "0.0.0",
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    "./nextConfigPWA": {
+      "types": "./dist/next-pwa.config.d.ts",
+      "default": "./dist/next-pwa.config.js"
+    },
+    "./nextConfig": {
+      "types": "./dist/next-config.d.ts",
+      "default": "./dist/next-config.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "biome check .",
+    "lint:fix": "biome check . --apply",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "@next/bundle-analyzer": "^14.2.3",
+    "@playwright/test": "^1.44.1",
+    "@sentry/nextjs": "^8.7.0",
+    "@types/webpack": "^5.28.5",
+    "next-compose-plugins": "^2.2.1",
+    "next-pwa": "^5.6.0",
+    "webpack": "^5.91.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.7.1",
+    "@dank/tsconfig": "workspace:^",
+    "tsup": "^8.0.2"
+  },
+  "peerDependencies": {
+    "next": "^13.2.0 || ^14.0",
+    "react": "16.x || 17.x || 18.x",
+    "webpack": ">= 5.0.0"
+  },
+  "peerDependenciesMeta": {
+    "webpack": {
+      "optional": true
+    }
+  }
+}

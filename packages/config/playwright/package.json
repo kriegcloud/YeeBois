@@ -1,0 +1,29 @@
+{
+  "private": true,
+  "name": "@dank/playwright",
+  "version": "0.0.0",
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    "./playwright.config": {
+      "types": "./dist/playwright.config.d.ts",
+      "default": "./dist/playwright.config.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "biome check .",
+    "lint:fix": "biome check . --apply",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "@playwright/test": "^1.44.1"
+  },
+  "devDependencies": {
+    "@dank/tsconfig": "workspace:^",
+    "@biomejs/biome": "1.7.1",
+    "tsup": "^8.0.2"
+  }
+}
