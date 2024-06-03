@@ -11,12 +11,7 @@ const withBundleAnalyzer = bundleAnalyzer({
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  transpilePackages: [
-    '@dank/db',
-    '@dank/auth',
-    '@dank/api',
-    "@dank/env"
-  ],
+  transpilePackages: ['@dank/db', '@dank/auth', '@dank/api', '@dank/env'],
   reactStrictMode: true,
   experimental: {
     turbo: {

@@ -1,7 +1,7 @@
 import { defineConfig } from 'tsup';
 
 export default defineConfig((opts) => ({
-  entry: ['./next.config.ts', './next.config-pwa.ts'],
+  entry: ['./instrumentation.ts'],
   format: ['esm'],
   splitting: true,
   sourcemap: true,

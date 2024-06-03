@@ -3,7 +3,7 @@
   "type": "module",
   "scripts": {
     "build": "dotenv -e .env.local -- turbo build",
-    "clean": "rimraf --glob **/node_modules **/dist **/.turbo **/.next **/.astro **/storybook-static bun.lockb **/.tsbuildinfo **/playwright-report **/test-results",
+    "clean": "rimraf --glob **/node_modules **/dist **/.turbo **/.next **/.astro **/storybook-static bun.lockb **/.tsbuildinfo **/playwright-report **/test-results **/.tsup",
     "release": "turbo run build lint typecheck && changeset version && changeset publish",
     "reset:changelog": "rimraf --glob **/CHANGELOG.md",
     "reset:versions": "bun run ./scripts/reset-versions",
@@ -50,7 +50,6 @@
     "lefthook": "1.6.10",
     "turbo": "latest",
     "dotenv": "^16.4.5",
-    "@playwright/test": "^1.44.1",
     "dotenv-cli": "^7.4.2",
     "prettier": "^3.2.5",
     "prettier-plugin-astro": "^0.14.0",

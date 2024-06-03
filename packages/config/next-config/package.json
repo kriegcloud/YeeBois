@@ -24,9 +24,6 @@
   },
   "dependencies": {
     "@next/bundle-analyzer": "^14.2.3",
-    "@playwright/test": "^1.44.1",
-    "@sentry/nextjs": "^8.7.0",
-    "@types/webpack": "^5.28.5",
     "next-compose-plugins": "^2.2.1",
     "next-pwa": "^5.6.0",
     "webpack": "^5.91.0"

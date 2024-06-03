@@ -1,7 +1,7 @@
 import { defineConfig } from 'tsup';
 
 export default defineConfig((opts) => ({
-  entry: ['./next.config.ts', './next.config-pwa.ts'],
+  entry: ['./vitest.e2e.config.ts'],
   format: ['esm'],
   splitting: true,
   sourcemap: true,
