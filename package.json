@@ -73,7 +73,7 @@
     "apps/*",
     "packages/ui",
     "packages/config/*",
-    "packages/services/*",
+    "packages/modules/*",
     "packages/utils/*",
     "packages/assets"
   ],
