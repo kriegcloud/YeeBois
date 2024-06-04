@@ -5,6 +5,7 @@ import createJiti from 'jiti';
 createJiti(fileURLToPath(import.meta.url))('./src/env');
 import bundleAnalyzer from '@next/bundle-analyzer';
 
+
 const withBundleAnalyzer = bundleAnalyzer({
   enabled: process.env['ANALYZE'] === 'true',
 });
