@@ -4,7 +4,7 @@ export default defineConfig((opts) => ({
   entry: [
     './sentry.client.config.ts',
     './sentry.server.config.ts',
-    './sentry.edge.config.ts'
+    './sentry.edge.config.ts',
   ],
   format: ['esm'],
   splitting: true,
