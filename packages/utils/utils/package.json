@@ -2,9 +2,9 @@
   "name": "@dank/utils",
   "version": "0.1.0",
   "private": true,
-  "description": "Common utilities for OrbitKit",
+  "description": "Common utilities for YeeBois",
   "license": "MIT",
-  "author": "OrbitKit",
+  "author": "YeeBois",
   "sideEffects": false,
   "type": "module",
   "exports": {

@@ -23,6 +23,9 @@ words:
   - CLIENTVAR
   - Editrix
   - Algochurn
+  - SAMEORIGIN
+  - nosniff
+  - SEMRESATTRS
   - Aceternity
   - Renderwork
   - svgr
