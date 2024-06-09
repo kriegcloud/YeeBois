@@ -4,6 +4,11 @@
   "name": "yeebois",
   "scripts": {
     "build": "dotenv -e .env.local -- turbo build",
+    "sst:build": "sst build",
+    "sst:dev": "sst dev",
+    "sst:deploy": "sst deploy",
+    "sst:remove": "sst remove",
+    "sst:console": "sst console",
     "clean": "rimraf --glob **/node_modules **/dist **/.turbo **/.next **/.astro **/storybook-static bun.lockb **/.tsbuildinfo **/playwright-report **/test-results **/.tsup",
     "release": "turbo run build lint typecheck && changeset version && changeset publish",
     "reset:changelog": "rimraf --glob **/CHANGELOG.md",
@@ -42,6 +47,7 @@
     "**/*.{md,mdx}": ["markdownlint"]
   },
   "devDependencies": {
+    "@dank/infrastructure": "workspace:^",
     "sst": "2.43.0",
     "@tsconfig/node18": "^18.2.2",
     "aws-cdk-lib": "2.145.0",
@@ -80,6 +86,8 @@
     "packages/types",
     "packages/constants",
     "packages/service-modules/*",
+    "deployment/sst/modules/*",
+    "deployment/sst/stacks",
     "packages/utils/*",
     "tooling/*",
     "packages/assets"

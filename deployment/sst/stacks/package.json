@@ -2,7 +2,7 @@
   "name": "@dank/infrastructure",
   "version": "1.0.0",
   "description": "",
-  "main": "index.ts",
+  "main": "index.js",
   "devDependencies": {
     "@biomejs/biome": "1.7.1",
     "@dank/types": "workspace:^"

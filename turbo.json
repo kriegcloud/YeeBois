@@ -29,7 +29,15 @@
         "AUTH_GOOGLE_SECRET",
         "AUTH_GOOGLE_CODE_VERIFIER"
       ],
-      "outputs": [".next/**", "!.next/cache/**", "dist/**", ".astro/**"]
+      "outputs": [
+        ".next/**",
+        "!.next/cache/**",
+        ".open-next/**",
+        "!.open-next/cache/**",
+        "next-env.d.ts",
+        ".expo/**",
+        "web/dist/**"
+      ]
     },
     "test": {
       "outputs": ["coverage/**"],
