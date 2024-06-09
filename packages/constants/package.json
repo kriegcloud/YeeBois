@@ -1,0 +1,19 @@
+{
+  "name": "@dank/constants",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "lint": "biome check .",
+    "lint:fix": "biome check . --apply",
+    "typecheck": "tsc --noEmit"
+  },
+  "author": "YeeBois",
+  "dependencies": {
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@dank/tsconfig": "workspace:^",
+    "@biomejs/biome": "1.7.1"
+  }
+}

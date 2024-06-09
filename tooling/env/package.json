@@ -8,12 +8,11 @@
   "sideEffects": false,
   "type": "module",
   "exports": {
-    "./web": "./src/web.ts",
-    "./marketing": "./src/marketing.ts"
+    "./web": "./src/web.ts"
   },
   "scripts": {
     "typecheck": "tsc",
-    "clean": "rm -rf .turbo && rm -rf node_modules",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf .tsbuildinfo",
     "lint": "biome check .",
     "lint:fix": "biome check . --apply"
   },

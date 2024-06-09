@@ -1,0 +1,22 @@
+{
+  "name": "@dank/authorizer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "biome check .",
+    "lint:fix": "biome check . --apply",
+    "clean": "rm -rf .turbo && rm -rf node_modules",
+    "typecheck": "tsc --noEmit"
+  },
+  "author": "YeeBois",
+  "devDependencies": {
+    "@biomejs/biome": "1.7.1",
+    "@types/aws-lambda": "^8.10.138"
+  },
+  "dependencies": {
+    "aws-lambda": "^1.0.7",
+    "jsonwebtoken": "^9.0.2",
+    "jwks-rsa": "^3.1.0"
+  }
+}
