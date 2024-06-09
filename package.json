@@ -4,6 +4,11 @@
   "name": "yeebois",
   "scripts": {
     "build": "dotenv -e .env.local -- turbo build",
+    "sst:build": "sst build",
+    "sst:dev": "sst dev",
+    "sst:deploy": "sst deploy",
+    "sst:remove": "sst remove",
+    "sst:console": "sst console",
     "clean": "rimraf --glob **/node_modules **/dist **/.turbo **/.next **/.astro **/storybook-static bun.lockb **/.tsbuildinfo **/playwright-report **/test-results **/.tsup",
     "release": "turbo run build lint typecheck && changeset version && changeset publish",
     "reset:changelog": "rimraf --glob **/CHANGELOG.md",
