@@ -1,6 +1,6 @@
-# Contributing to Orbitkit
+# Contributing to YeeBois
 
-Thank you for considering contributing to Orbitkit :tada:
+Thank you for considering contributing to YeeBois :tada:
 
 ## How to Contribute
 
@@ -23,7 +23,7 @@ bun: ">=1.1.9"
 
 ### Setting up your local repo
 
-Orbitkit uses bun workspaces, so you should **always run `bun install` from the top-level project directory**. Running `bun install` in the top-level project root will install dependencies for `Orbitkit`, and every package in the repo.
+YeeBois uses bun workspaces, so you should **always run `bun install` from the top-level project directory**. Running `bun install` in the top-level project root will install dependencies for `YeeBois`, and every package in the repo.
 
 ```shell
 git clone && cd ...
@@ -41,7 +41,7 @@ You will also need to create a GitHub Oauth token as well as for Google authenti
 
 To get started, create a codespace for this repository by clicking this 👇
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/ixahmedxi/orbitkit)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/codedank/yeebois)
 
 Your new codespace will open in a web-based version of Visual Studio Code. All development dependencies will be preinstalled, and the tests will run automatically ensuring you've got a green base from which to start working.
 
@@ -97,4 +97,4 @@ By contributing to this project, you agree that your contributions will be licen
 
 If you have any suggestions or concerns, consider opening a new issue.
 
-**[Orbitkit](https://github.com/ixahmedxi/orbitkit/issues)**
+**[YeeBois](https://github.com/codedank/yeebois/issues)**

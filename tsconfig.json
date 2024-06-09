@@ -1,8 +1,9 @@
 {
-  "extends": ["@dank/tsconfig/orbit-base.json"],
-  "compilerOptions": {
-    "tsBuildInfoFile": ".tsbuildinfo"
-  },
+  "extends": "@tsconfig/node18/tsconfig.json",
+  "exclude": ["packages", "apps", "tooling", "node_modules"],
   "include": ["**/*.js", "**/*.ts", ".commitlintrc.ts"],
-  "exclude": ["apps", "packages", "node_modules"]
+  "compilerOptions": {
+    "module": "esnext",
+    "moduleResolution": "node"
+  }
 }
