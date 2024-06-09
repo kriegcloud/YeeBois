@@ -47,7 +47,6 @@
     "**/*.{md,mdx}": ["markdownlint"]
   },
   "devDependencies": {
-    "@dank/infrastructure": "workspace:^",
     "sst": "2.43.0",
     "@tsconfig/node18": "^18.2.2",
     "aws-cdk-lib": "2.145.0",
@@ -86,8 +85,6 @@
     "packages/types",
     "packages/constants",
     "packages/service-modules/*",
-    "deployment/sst/modules/*",
-    "deployment/sst/stacks",
     "packages/utils/*",
     "tooling/*",
     "packages/assets"
