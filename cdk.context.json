@@ -1,0 +1,14 @@
+{
+  "hosted-zone:account=905418027840:domainName=muckrat.com:region=us-east-1": {
+    "Id": "/hostedzone/Z09872571G38QBWIKFIG2",
+    "Name": "muckrat.com."
+  },
+  "availability-zones:account=905418027840:region=us-east-1": [
+    "us-east-1a",
+    "us-east-1b",
+    "us-east-1c",
+    "us-east-1d",
+    "us-east-1e",
+    "us-east-1f"
+  ]
+}

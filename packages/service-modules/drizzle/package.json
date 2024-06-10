@@ -1,5 +1,5 @@
 {
-  "name": "@dank/db",
+  "name": "@dank/drizzle",
   "private": true,
   "type": "module",
   "exports": {
@@ -36,7 +36,7 @@
     "db:studio": "pnpm drizzle-kit studio --port 3333  --config=drizzle.config.ts",
     "db:studio:r": "drizzle-kit studio --port 3333  --config=drizzle.config.ts",
     "db:seed:r": "tsx scripts/seed.ts",
-    "db:migrate": "sst bind tsx ./src/scripts/migrate.ts",
+    "db:migrate": "sst bind tsx src/scripts/migrate.ts",
     "db:clean:r": "infisical run --env=remote -- tsx scripts/dbClean.ts",
     "lint": "biome check .",
     "lint:fix": "biome check . --apply",
@@ -45,15 +45,15 @@
   },
   "dependencies": {
     "@dank/tsconfig": "workspace:*",
-    "@planetscale/database": "^1.18.0",
     "@t3-oss/env-nextjs": "^0.10.1",
     "drizzle-orm": "^0.31.0",
     "drizzle-zod": "^0.5.1",
-    "mysql2": "^3.10.0",
+    "postgres": "^3.4.4",
     "typeid-js": "^0.7.0",
     "zod": "^3.23.8"
   },
   "devDependencies": {
+    "@aws-sdk/client-rds-data": "^3.525.0",
     "drizzle-kit": "0.22.1",
     "tsx": "^4.11.0",
     "@biomejs/biome": "1.7.1",

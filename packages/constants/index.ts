@@ -1,8 +1,8 @@
 import { z } from 'zod';
 
 export const constants = z.nativeEnum({
-  serviceName: 'yeebois',
-  displayName: 'Yee Bois',
+  serviceName: 'muckrat',
+  displayName: 'Muck Rat',
   region: 'us-east-1',
   profile: 'elpresidank',
   prodStageName: 'prod',
@@ -10,15 +10,15 @@ export const constants = z.nativeEnum({
   devUrl: 'http://localhost:3000',
   nextjsSitePath: 'apps/web',
   nextAuthSecret: 'REPLACE_ME', // execute 'openssl rand -base64 32' to generate a secret
-  nextAuthUrl: 'https://____REPLACE_ME____.cloudfront.net',
+  nextAuthUrl: 'https://muckrat.com',
   authCallbackSuffix: '/api/auth/callback/cognito',
   authStackId: 'Auth',
   apiStackId: 'Api',
   cognitoUserPoolClientId: 'UserPoolClient',
-  nextjsSiteId: 'site',
+  nextjsSiteId: 'web',
   userPoolDomainId: 'UserPoolDomain',
   resourceServerId: 'ResourceServer',
-  resourceServerIdentifier: 't4',
+  resourceServerIdentifier: 'dank',
   appsCountLimit: 2,
 });
 
@@ -33,16 +33,4 @@ export const paramNames = z.nativeEnum({
   itemsTableName: 'ITEMS_TABLE_NAME',
   appsTableName: 'APPS_TABLE_NAME',
   apiEndpointUrl: 'API_ENDPOINT_URL',
-});
-
-export const tableNames = z.nativeEnum({
-  items: 'items',
-  apps: 'apps',
-});
-
-export const routes = z.nativeEnum({
-  items: '/items',
-  home: '/home',
-  docs: '/docs',
-  apps: '/apps',
 });
