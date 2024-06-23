@@ -1,7 +1,7 @@
 Liveblocks is a real-time collaboration infrastructure for building performant collaborative experiences. The foundations of Liveblocks are built upon four core concepts: products, rooms, integrations, and platform.
 
 %% Begin Waypoint %%
-- [[authentication]]
+- [[Wizardry/Platforms/Liveblocks/authentication]]
 - [[Broadcast]]
 - [[Comments]]
 - [[Document]]

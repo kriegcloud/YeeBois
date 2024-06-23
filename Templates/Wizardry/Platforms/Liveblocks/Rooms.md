@@ -1,1 +1,1 @@
-A room is the digital space in which people collaborate. You can require your users to be [[authentication|authenticated]] to interact with rooms, and each room can have specific [[Permissions]] and [[Metadata]] associated with them.
+A room is the digital space in which people collaborate. You can require your users to be [[Templates/Wizardry/Platforms/Liveblocks/authentication|authenticated]] to interact with rooms, and each room can have specific [[Permissions]] and [[Metadata]] associated with them.

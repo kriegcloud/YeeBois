@@ -25,7 +25,7 @@ Explanations that makes something clear; clarification.
 - [[juvenescence]]
 - [[laurels]]
 - [[lucre]]
-- [[meagerings]]
+- [[Elucidations/meagerings]]
 - [[Obliviate]]
 - [[pedagogue]]
 - [[pedant]]
