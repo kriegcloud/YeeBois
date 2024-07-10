@@ -92,8 +92,16 @@ export const products = [
 ];
 
 export const menuOptions = [
-  { name: 'Dashboard', Component: Home, href: '/dashboard/graphs/force-layout' },
-  { name: 'Workflows', Component: Workflows, href: '/dashboard/graphs/auto-layout' },
+  {
+    name: 'Dashboard',
+    Component: Home,
+    href: '/dashboard/graphs/force-layout',
+  },
+  {
+    name: 'Workflows',
+    Component: Workflows,
+    href: '/dashboard/graphs/auto-layout',
+  },
   { name: 'Settings', Component: Settings, href: '/dashboard' },
   { name: 'Connections', Component: Category, href: '/connections' },
   { name: 'Billing', Component: Payment, href: '/billing' },

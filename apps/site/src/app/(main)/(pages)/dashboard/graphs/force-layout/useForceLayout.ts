@@ -1,34 +1,34 @@
-import { useEffect } from 'react';
 import {
-  forceSimulation,
+  SimulationLinkDatum,
+  SimulationNodeDatum,
   forceLink,
   forceManyBody,
+  forceSimulation,
   forceX,
   forceY,
-
-  SimulationLinkDatum, SimulationNodeDatum,
 } from 'd3-force';
-import { useReactFlow, ReactFlowState, useStore } from 'reactflow';
+import { useEffect } from 'react';
+import { ReactFlowState, useReactFlow, useStore } from 'reactflow';
 
 type UseForceLayoutOptions = {
   strength: number;
   distance: number;
 };
 
-type SimNodeType = SimulationNodeDatum
-  // SimulationNodeDatum & Node;
+type SimNodeType = SimulationNodeDatum;
+// SimulationNodeDatum & Node;
 
 const elementCountSelector = (state: ReactFlowState) =>
   state.nodeInternals.size + state.edges.length;
 const nodesInitializedSelector = (state: ReactFlowState) =>
   Array.from(state.nodeInternals.values()).every(
-    (node) => node.width && node.height
+    (node) => node.width && node.height,
   ) && state.nodeInternals.size;
 
 function useForceLayout({
-                          strength = -1000,
-                          distance = 150,
-                        }: UseForceLayoutOptions) {
+  strength = -1000,
+  distance = 150,
+}: UseForceLayoutOptions) {
   const elementCount = useStore(elementCountSelector);
   const nodesInitialized = useStore(nodesInitializedSelector);
   const { setNodes, getNodes, getEdges } = useReactFlow();
@@ -48,7 +48,7 @@ function useForceLayout({
     }));
 
     const simulationLinks: SimulationLinkDatum<SimNodeType>[] = edges.map(
-      (edge) => edge
+      (edge) => edge,
     );
 
     const simulation = forceSimulation()
@@ -59,7 +59,7 @@ function useForceLayout({
         forceLink(simulationLinks)
           .id((d: any) => d.id)
           .strength(0.05)
-          .distance(distance)
+          .distance(distance),
       )
       .force('x', forceX().x(0).strength(0.08))
       .force('y', forceY().y(0).strength(0.08))
@@ -83,7 +83,7 @@ function useForceLayout({
             }
 
             return { ...node, position: { x: x ?? 0, y: y ?? 0 } };
-          })
+          }),
         );
       });
 

@@ -1,5 +1,5 @@
-import { Position } from 'reactflow';
 import { Direction } from '@/lib/algorithms';
+import { Position } from 'reactflow';
 
 export function getSourceHandlePosition(direction: Direction) {
   switch (direction) {

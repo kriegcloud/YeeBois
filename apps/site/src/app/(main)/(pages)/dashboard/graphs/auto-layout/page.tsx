@@ -1,5 +1,5 @@
 'use client';
-import { useEffect, useCallback } from 'react';
+import { useCallback, useEffect } from 'react';
 
 import ReactFlow, {
   MarkerType,
@@ -11,18 +11,19 @@ import ReactFlow, {
   useEdgesState,
   OnConnect,
   addEdge,
-  ConnectionLineType, ReactFlowProvider,
+  ConnectionLineType,
+  ReactFlowProvider,
 } from 'reactflow';
 
-import "./styles.module.css"
 // This is used to display a leva (https://github.com/pmndrs/leva) control panel for the example
-import { useControls, button } from 'leva';
+import { button, useControls } from 'leva';
+import './styles.module.css';
 
 import useAutoLayout, { type LayoutOptions } from './useAutoLayout.ts';
 
 import {
-  nodes as initialNodes,
   edges as initialEdges,
+  nodes as initialNodes,
 } from './initialElements.ts';
 
 import { getId } from './utils.ts';
@@ -75,7 +76,7 @@ function ReactFlowAutoLayout() {
         position: { x: 0, y: 0 },
         data: { label: `New Node` },
         style: { opacity: 0 },
-      })
+      }),
     ),
   });
 
@@ -105,7 +106,7 @@ function ReactFlowAutoLayout() {
       setNodes((nodes) => nodes.concat([childNode]));
       setEdges((edges) => edges.concat([connectingEdge]));
     },
-    [setNodes, setEdges, nodes.length]
+    [setNodes, setEdges, nodes.length],
   );
 
   // this function is called when a node in the graph is clicked
@@ -114,12 +115,12 @@ function ReactFlowAutoLayout() {
       // on click, we want to create a new node connection the clicked node
       addChildNode(node.id);
     },
-    [addChildNode]
+    [addChildNode],
   );
 
   const onConnect: OnConnect = useCallback(
     (connection) => setEdges((eds) => addEdge(connection, eds)),
-    [setEdges]
+    [setEdges],
   );
 
   // every time our nodes change, we want to center the graph again
@@ -149,7 +150,6 @@ const ReactFlowWrapper = () => {
     <ReactFlowProvider>
       <ReactFlowAutoLayout />
     </ReactFlowProvider>
-
   );
 };
 

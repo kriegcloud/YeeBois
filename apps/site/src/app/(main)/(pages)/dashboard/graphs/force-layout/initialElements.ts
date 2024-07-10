@@ -1,6 +1,6 @@
 import { Edge, Node } from 'reactflow';
 import s from '../auto-layout/styles.module.css';
-const styles: any = s
+const styles: any = s;
 export const initialNodes: Node[] = [
   {
     id: '1',

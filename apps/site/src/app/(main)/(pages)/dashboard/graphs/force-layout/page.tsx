@@ -1,24 +1,23 @@
 'use client';
-import { useCallback, MouseEvent } from 'react';
+import { MouseEvent, useCallback } from 'react';
 import ReactFlow, {
   Background,
   Panel,
   ProOptions,
-
   useNodesState,
   useEdgesState,
   useReactFlow,
   NodeOrigin,
   NodeMouseHandler,
   addEdge,
-  OnConnect, ReactFlowProvider,
+  OnConnect,
+  ReactFlowProvider,
 } from 'reactflow';
-
 
 import { useControls } from 'leva';
 
+import { initialEdges, initialNodes } from './initialElements.ts';
 import useForceLayout from './useForceLayout.ts';
-import { initialNodes, initialEdges } from './initialElements.ts';
 
 import styles from '../auto-layout/styles.module.css';
 
@@ -61,7 +60,7 @@ function ReactFlowPro({ strength = -1000, distance = 150 }: ExampleProps = {}) {
         },
       ]);
     },
-    [screenToFlowPosition, setNodes]
+    [screenToFlowPosition, setNodes],
   );
 
   const onNodeClick: NodeMouseHandler = useCallback(
@@ -83,12 +82,12 @@ function ReactFlowPro({ strength = -1000, distance = 150 }: ExampleProps = {}) {
       setNodes((nds) => [...nds, childNode]);
       setEdges((eds) => [...eds, childEdge]);
     },
-    [nodes.length, setNodes, setEdges]
+    [nodes.length, setNodes, setEdges],
   );
 
   const onConnect: OnConnect = useCallback(
     (params) => setEdges((eds) => addEdge(params, eds)),
-    [setEdges]
+    [setEdges],
   );
 
   return (

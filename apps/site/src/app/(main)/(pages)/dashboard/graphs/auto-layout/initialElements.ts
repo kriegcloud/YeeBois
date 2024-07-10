@@ -1,4 +1,4 @@
-import { type Node, type Edge } from 'reactflow';
+import { type Edge, type Node } from 'reactflow';
 
 export const nodes: Node[] = [
   {

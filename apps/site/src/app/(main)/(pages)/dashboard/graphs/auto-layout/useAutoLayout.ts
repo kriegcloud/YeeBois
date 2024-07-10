@@ -1,14 +1,16 @@
 import { useEffect } from 'react';
 import {
-  type Node,
   type Edge,
-  useReactFlow,
+  type Node,
   useNodesInitialized,
+  useReactFlow,
   useStore,
 } from 'reactflow';
 
+import layoutAlgorithms, {
+  type LayoutAlgorithmOptions,
+} from '@/lib/algorithms';
 import { getSourceHandlePosition, getTargetHandlePosition } from './utils.ts';
-import layoutAlgorithms, { type LayoutAlgorithmOptions } from '@/lib/algorithms';
 
 export type LayoutOptions = {
   algorithm: keyof typeof layoutAlgorithms;
@@ -26,13 +28,13 @@ function useAutoLayout(options: LayoutOptions) {
       nodeMap: state.nodeInternals,
       edgeMap: state.edges.reduce(
         (acc, edge) => acc.set(edge.id, edge),
-        new Map()
+        new Map(),
       ),
     }),
     // The compare elements function will only update `elements` if something has
     // changed that should trigger a layout. This includes changes to a node's
     // dimensions, the number of nodes, or changes to edge sources/targets.
-    compareElements
+    compareElements,
   );
 
   useEffect(() => {
@@ -52,7 +54,7 @@ function useAutoLayout(options: LayoutOptions) {
       const { nodes: nextNodes, edges: nextEdges } = await layoutAlgorithm(
         nodes,
         edges,
-        options
+        options,
       );
 
       // Mutating the nodes and edges directly here is fine because we expect our
