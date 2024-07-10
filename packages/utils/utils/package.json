@@ -8,6 +8,12 @@
   "sideEffects": false,
   "type": "module",
   "exports": {
+    "./typeid": {
+      "import": {
+        "types": "./dist/typeid.d.ts",
+        "default": "./dist/typeid.js"
+      }
+    },
     "./filesystem": {
       "types": "./dist/filesystem.d.ts",
       "default": "./dist/filesystem.js"

@@ -1,0 +1,48 @@
+{
+  "name": "@dank/platform",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./trpc": {
+      "types": "./trpc/index.ts"
+    }
+  },
+  "scripts": {
+    "test:e2e": "playwright test",
+    "lint": "biome check .",
+    "lint:fix": "biome check . --apply",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf .next",
+    "with-env": "dotenv -e ../../.env.local --"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.11.3",
+    "@hono/trpc-server": "^0.3.1",
+    "@hono/zod-validator": "^0.2.2",
+    "@simplewebauthn/server": "^10.0.0",
+    "@t3-oss/env-core": "^0.10.1",
+    "@dank/utils": "workspace:^",
+    "@dank/drizzle": "workspace:^",
+    "@trpc/client": "^10.45.2",
+    "@trpc/server": "^10.45.2",
+    "hono": "^4.4.6",
+    "itty-time": "^1.0.6",
+    "lucia": "^3.2.0",
+    "oslo": "^1.2.0",
+    "superjson": "^2.2.1",
+    "typescript": "^5.4.5",
+    "ua-parser-js": "^1.0.38",
+    "unstorage": "^1.10.2",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.7.1",
+    "@dank/playwright": "workspace:*",
+    "@dank/tsconfig": "workspace:^",
+    "@simplewebauthn/types": "^10.0.0",
+    "@types/node": "^20.14.2",
+    "tsk": "^0.3.2"
+  },
+  "author": "Muck Rat"
+}

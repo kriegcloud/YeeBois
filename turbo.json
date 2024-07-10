@@ -16,9 +16,7 @@
         "package.json",
         "tsconfig.json"
       ],
-      "env": [
-        "DATABASE_URL",
-      ],
+      "env": ["DATABASE_URL"],
       "outputs": [
         ".next/**",
         "!.next/cache/**",

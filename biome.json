@@ -23,7 +23,8 @@
         "useAriaPropsForRole": "off"
       },
       "complexity": {
-        "useLiteralKeys": "off"
+        "useLiteralKeys": "off",
+        "noBannedTypes": "off"
       },
       "recommended": true,
       "correctness": {

@@ -1,7 +1,7 @@
 import { defineConfig } from 'tsup';
 
 export default defineConfig((opts) => ({
-  entry: ['./src/filesystem.ts', './src/url.ts'],
+  entry: ['./src/filesystem.ts', './src/url.ts', './src/typeid.ts'],
   format: ['esm'],
   splitting: true,
   sourcemap: true,

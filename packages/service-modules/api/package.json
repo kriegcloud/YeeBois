@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "1.7.1",
-    "@dank/tsconfig": "workspace:*",
+    "@dank/tsconfig": "workspace:^",
     "typescript": "^5.4.5"
   }
 }

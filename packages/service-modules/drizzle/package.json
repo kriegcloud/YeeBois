@@ -4,24 +4,34 @@
   "type": "module",
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "default": "./src/index.ts"
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./src/index.ts"
+      }
     },
     "./orm": {
-      "types": "./dist/orm.d.ts",
-      "default": "./src/orm.ts"
+      "import": {
+        "types": "./dist/orm.d.ts",
+        "default": "./src/orm.ts"
+      }
     },
     "./schema": {
-      "types": "./dist/schema/schema.d.ts",
-      "default": "./src/schema/schema.ts"
+      "import": {
+        "types": "./dist/schema/schema.d.ts",
+        "default": "./src/schema/schema.ts"
+      }
     },
     "./shared": {
-      "types": "./dist/schema/shared.d.ts",
-      "default": "./src/schema/shared.ts"
+      "import": {
+        "types": "./dist/schema/shared.d.ts",
+        "default": "./src/schema/shared.ts"
+      }
     },
     "./migrate": {
-      "types": "./dist/scripts/migrate.d.ts",
-      "default": "./src/scripts/migrate.ts"
+      "import": {
+        "types": "./dist/scripts/migrate.d.ts",
+        "default": "./src/scripts/migrate.ts"
+      }
     }
   },
   "scripts": {
@@ -44,7 +54,7 @@
     "typecheck": "tsc --noEmit --emitDeclarationOnly false"
   },
   "dependencies": {
-    "@dank/tsconfig": "workspace:*",
+    "@dank/tsconfig": "workspace:^",
     "@t3-oss/env-nextjs": "^0.10.1",
     "drizzle-orm": "^0.31.0",
     "drizzle-zod": "^0.5.1",

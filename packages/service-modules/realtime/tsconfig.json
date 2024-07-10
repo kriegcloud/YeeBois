@@ -1,0 +1,6 @@
+{
+  "extends": "@dank/tsconfig/orbit-base.json",
+  "compilerOptions": {
+    "esModuleInterop": true
+  }
+}

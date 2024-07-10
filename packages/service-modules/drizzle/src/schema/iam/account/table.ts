@@ -1,27 +1,36 @@
-import { integer, pgTable, primaryKey, text } from 'drizzle-orm/pg-core';
+import {
+  boolean,
+  json,
+  pgTable,
+  primaryKey,
+  serial,
+  text,
+  timestamp,
+} from 'drizzle-orm/pg-core';
 import type { AdapterAccountType } from 'next-auth/adapters';
+import { publicId } from '../../abs';
 import { users } from '../users/table';
+import { AccountMetadata } from './types';
 
 export const accounts = pgTable(
-  "account",
+  'account',
   {
-    userId: text("userId")
-      .notNull()
-      .references(() => users.id, { onDelete: "cascade" }),
-    type: text("type").$type<AdapterAccountType>().notNull(),
-    provider: text("provider").notNull(),
-    providerAccountId: text("providerAccountId").notNull(),
-    refresh_token: text("refresh_token"),
-    access_token: text("access_token"),
-    expires_at: integer("expires_at"),
-    token_type: text("token_type"),
-    scope: text("scope"),
-    id_token: text("id_token"),
-    session_state: text("session_state"),
+    id: serial('id').primaryKey(),
+    username: text('username').notNull(),
+    metadata: json('metadata').$type<AccountMetadata>(),
+    createdAt: timestamp('created_at').$defaultFn(() => new Date()),
+    provider: text('provider').notNull(),
+    providerAccountId: text('providerAccountId').notNull(),
+    lastLoginAt: timestamp('last_login_at'),
+    passwordHash: text('password_hash'),
+    twoFactorSecret: text('two_factor_secret'),
+    twoFactorEnabled: boolean('two_factor_enabled').notNull().default(false),
+    recoveryCode: text('recovery_code'),
+    preAccount: boolean('pre_account').notNull().default(true),
   },
   (account) => ({
     compoundKey: primaryKey({
       columns: [account.provider, account.providerAccountId],
     }),
-  })
-)
+  }),
+);

@@ -79,14 +79,13 @@ const config: NextConfig = () => {
       config.module.noParse = /\.wasm$/;
 
       // biome-ignore lint/complexity/noForEach: <explanation>
-      config.module.rules.forEach((rule: any) => {
-        // biome-ignore lint/complexity/noForEach: <explanation>
-        (rule.oneOf || []).forEach((oneOf: any) => {
+      for (const rule of config.module.rules) {
+        for (const oneOf of rule.oneOf || []) {
           if (oneOf.loader && oneOf.loader.indexOf('file-loader') >= 0) {
             oneOf.exclude.push(/\.wasm$/);
           }
-        });
-      });
+        }
+      }
 
       if (!isServer) {
         config.resolve.fallback.fs = false;

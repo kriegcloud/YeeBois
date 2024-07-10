@@ -1,7 +1,7 @@
+import { RDSDataClient } from '@aws-sdk/client-rds-data';
 import { drizzle } from 'drizzle-orm/aws-data-api/pg';
+import { RDS } from 'sst/node/rds';
 import * as schema from './schema/schema';
-import { RDSDataClient } from "@aws-sdk/client-rds-data";
-import {RDS} from "sst/node/rds";
 
 const connectionOptions = {
   logger: false,

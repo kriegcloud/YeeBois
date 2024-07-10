@@ -1,0 +1,25 @@
+{
+  "name": "@dank/realtime",
+  "version": "0.0.0",
+  "private": true,
+  "types": "./index.ts",
+  "main": "index.js",
+  "type": "module",
+  "exports": {
+    "./client": "./client.ts",
+    "./server": "./server.ts",
+    "./events": "./events.ts"
+  },
+  "scripts": {
+    "check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@dank/utils": "workspace:^",
+    "pusher": "^5.2.0",
+    "pusher-js": "8.4.0-rc2",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@dank/tsconfig": "workspace:^"
+  }
+}

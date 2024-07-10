@@ -44,7 +44,7 @@
     "typecheck": "tsc --noEmit --emitDeclarationOnly false"
   },
   "dependencies": {
-    "@dank/tsconfig": "workspace:*",
+    "@dank/tsconfig": "workspace:^",
     "@planetscale/database": "^1.18.0",
     "@t3-oss/env-nextjs": "^0.10.1",
     "drizzle-orm": "^0.31.0",
