@@ -1,0 +1,275 @@
+import { entityKind } from "@/lib/funk/entity";
+import type { Column } from './column.ts';
+import type { Simplify } from './utils.ts';
+
+export type ColumnDataType =
+  | 'string'
+  | 'number'
+  | 'boolean'
+  | 'array'
+  | 'json'
+  | 'custom'
+
+export type GeneratedStorageMode = 'virtual' | 'stored';
+
+export type GeneratedType = 'always' | 'byDefault';
+
+export type GeneratedColumnConfig<TDataType> = {
+  as: TDataType;
+  type?: GeneratedType;
+  mode?: GeneratedStorageMode;
+};
+
+export type GeneratedIdentityConfig = {
+  sequenceName?: string;
+  type: 'always' | 'byDefault';
+};
+
+export interface ColumnBuilderBaseConfig<TDataType extends ColumnDataType, TColumnType extends string> {
+  name: string;
+  dataType: TDataType;
+  columnType: TColumnType;
+  data: unknown;
+  enumValues: string[] | undefined;
+  generated: GeneratedColumnConfig<unknown> | undefined;
+}
+
+export type MakeColumnConfig<
+  T extends ColumnBuilderBaseConfig<ColumnDataType, string>,
+  TTableName extends string,
+  TData = T extends { $type: infer U } ? U : T['data'],
+> = {
+  name: T['name'];
+  tableName: TTableName;
+  dataType: T['dataType'];
+  columnType: T['columnType'];
+  data: TData;
+  notNull: T extends { notNull: true } ? true : false;
+  hasDefault: T extends { hasDefault: true } ? true : false;
+  hasRuntimeDefault: T extends { hasRuntimeDefault: true } ? true : false;
+  enumValues: T['enumValues'];
+  baseColumn: T extends { baseBuilder: infer U extends ColumnBuilderBase } ? BuildColumn<TTableName, U>
+    : never;
+  generated: T['generated'] extends object ? T['generated'] : undefined;
+} & {};
+
+export type ColumnBuilderTypeConfig<
+  T extends ColumnBuilderBaseConfig<ColumnDataType, string>,
+  TTypeConfig extends object = object,
+> = Simplify<
+  & {
+    brand: 'ColumnBuilder';
+    name: T['name'];
+    dataType: T['dataType'];
+    columnType: T['columnType'];
+    data: T['data'];
+    notNull: T extends { notNull: infer U } ? U : boolean;
+    hasDefault: T extends { hasDefault: infer U } ? U : boolean;
+    enumValues: T['enumValues'];
+    generated: GeneratedColumnConfig<T['data']> | undefined;
+  }
+  & TTypeConfig
+>;
+
+export type ColumnBuilderRuntimeConfig<TData, TRuntimeConfig extends object = object> = {
+  name: string;
+  notNull: boolean;
+  default: TData | undefined;
+  defaultFn: (() => TData) | undefined;
+  onUpdateFn: (() => TData) | undefined;
+  hasDefault: boolean;
+  primaryKey: boolean;
+  isUnique: boolean;
+  uniqueName: string | undefined;
+  uniqueType: string | undefined;
+  dataType: string;
+  columnType: string;
+  generated: GeneratedColumnConfig<TData> | undefined;
+  generatedIdentity: GeneratedIdentityConfig | undefined;
+} & TRuntimeConfig;
+
+export type NotNull<T extends ColumnBuilderBase> = T & {
+  _: {
+    notNull: true;
+  };
+};
+
+export type HasDefault<T extends ColumnBuilderBase> = T & {
+  _: {
+    hasDefault: true;
+  };
+};
+
+export type HasRuntimeDefault<T extends ColumnBuilderBase> = T & {
+  _: {
+    hasRuntimeDefault: true;
+  };
+};
+
+export type $Type<T extends ColumnBuilderBase, TType> = T & {
+  _: {
+    $type: TType;
+  };
+};
+
+export type HasGenerated<T extends ColumnBuilderBase, TGenerated extends {} = {}> = T & {
+  _: {
+    hasDefault: true;
+    generated: TGenerated;
+  };
+};
+
+export type IsIdentityByDefault<
+  T extends ColumnBuilderBase,
+  TType extends 'always' | 'byDefault',
+> = T & {
+  _: {
+    notNull: true;
+    hasDefault: true;
+    generated: { as: any; type: TType };
+  };
+};
+
+export interface ColumnBuilderBase<
+  T extends ColumnBuilderBaseConfig<ColumnDataType, string> = ColumnBuilderBaseConfig<ColumnDataType, string>,
+  TTypeConfig extends object = object,
+> {
+  _: ColumnBuilderTypeConfig<T, TTypeConfig>;
+}
+
+// To understand how to use `ColumnBuilder` and `AnyColumnBuilder`, see `Column` and `AnyColumn` documentation.
+export abstract class ColumnBuilder<
+  T extends ColumnBuilderBaseConfig<ColumnDataType, string> = ColumnBuilderBaseConfig<ColumnDataType, string>,
+  TRuntimeConfig extends object = object,
+  TTypeConfig extends object = object,
+> implements ColumnBuilderBase<T, TTypeConfig> {
+  static readonly [entityKind]: string = 'ColumnBuilder';
+
+  declare _: ColumnBuilderTypeConfig<T, TTypeConfig>;
+
+  protected config: ColumnBuilderRuntimeConfig<T['data'], TRuntimeConfig>;
+
+  protected constructor(name: T['name'], dataType: T['dataType'], columnType: T['columnType']) {
+    this.config = {
+      name,
+      notNull: false,
+      default: undefined,
+      hasDefault: false,
+      isUnique: false,
+      uniqueName: undefined,
+      uniqueType: undefined,
+      dataType,
+      columnType,
+      generated: undefined,
+    } as ColumnBuilderRuntimeConfig<T['data'], TRuntimeConfig>;
+  }
+
+  /**
+   * Changes the data type of the column. Commonly used with `json` columns. Also, useful for branded types.
+   *
+   * @example
+   * ```ts
+   * const users = pgTable('users', {
+   * 	id: integer('id').$type<UserId>().primaryKey(),
+   * 	details: json('details').$type<UserDetails>().notNull(),
+   * });
+   * ```
+   */
+  $type<TType>(): $Type<this, TType> {
+    return this as $Type<this, TType>;
+  }
+
+  /**
+   * Adds a `not null` clause to the column definition.
+   *
+   * Affects the `select` model of the table - columns *without* `not null` will be nullable on select.
+   */
+  notNull(): NotNull<this> {
+    this.config.notNull = true;
+    return this as NotNull<this>;
+  }
+
+  /**
+   * Adds a `default <value>` clause to the column definition.
+   *
+   * Affects the `insert` model of the table - columns *with* `default` are optional on insert.
+   *
+   * If you need to set a dynamic default value, use {@link $defaultFn} instead.
+   */
+  default(value: (this['_'] extends { $type: infer U } ? U : this['_']['data'])): HasDefault<this> {
+    this.config.default = value;
+    this.config.hasDefault = true;
+    return this as HasDefault<this>;
+  }
+
+  /**
+   * Adds a dynamic default value to the column.
+   * The function will be called when the row is inserted, and the returned value will be used as the column value.
+   *
+   * **Note:** This value does not affect the `drizzle-kit` behavior, it is only used at runtime in `drizzle-orm`.
+   */
+  $defaultFn(
+    fn: () => (this['_'] extends { $type: infer U } ? U : this['_']['data']),
+  ): HasRuntimeDefault<HasDefault<this>> {
+    this.config.defaultFn = fn;
+    this.config.hasDefault = true;
+    return this as HasRuntimeDefault<HasDefault<this>>;
+  }
+
+  /**
+   * Alias for {@link $defaultFn}.
+   */
+  $default = this.$defaultFn;
+
+  /**
+   * Adds a dynamic update value to the column.
+   * The function will be called when the row is updated, and the returned value will be used as the column value if none is provided.
+   * If no `default` (or `$defaultFn`) value is provided, the function will be called when the row is inserted as well, and the returned value will be used as the column value.
+   *
+   * **Note:** This value does not affect the `drizzle-kit` behavior, it is only used at runtime in `drizzle-orm`.
+   */
+  $onUpdateFn(
+    fn: () => (this['_'] extends { $type: infer U } ? U : this['_']['data']),
+  ): HasDefault<this> {
+    this.config.onUpdateFn = fn;
+    this.config.hasDefault = true;
+    return this as HasDefault<this>;
+  }
+
+  /**
+   * Alias for {@link $onUpdateFn}.
+   */
+  $onUpdate = this.$onUpdateFn;
+
+
+  abstract generatedAlwaysAs(
+    as: T['data'],
+    config?: Partial<GeneratedColumnConfig<unknown>>,
+  ): HasGenerated<this>;
+}
+
+export type BuildColumn<
+  TTableName extends string,
+  TBuilder extends ColumnBuilderBase,
+> = Column<MakeColumnConfig<TBuilder['_'], TTableName>>
+
+// TODO
+// try to make sql as well + indexRaw
+
+// optional after everything will be working as expected
+// also try to leave only needed methods for extraConfig
+// make an error if I pass .asc() to fk and so on
+
+export type BuildColumns<
+  TTableName extends string,
+  TConfigMap extends Record<string, ColumnBuilderBase>,
+> =
+  & {
+    [Key in keyof TConfigMap]: BuildColumn<TTableName, TConfigMap[Key]>;
+  }
+  & {};
+
+export type BuildExtraConfigColumns<
+  _TTableName extends string,
+> =
+  & {};
