@@ -1,0 +1,26 @@
+- ffmpeg WASM HLS encoder
+- comments & likes
+- setup import aliases
+- video upload
+- sst deployments
+- livechat
+- superchats
+	- payments with stripe?
+- streaming 
+	- or something better?
+- docker compose pg database for dev
+- biomejs for linting
+- bun for package manager
+- github actions pipeline
+- shadcn + tailwind
+- vidstack video player
+- lucia auth 
+	- SSO Providers
+		- Google
+		- Discord
+- 
+- role based auth
+	- `"USER" | "CREATOR" | "ADMIN"`
+- creator upload / streaming dashboard studio
+- trpc
+- react-hook-form

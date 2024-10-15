@@ -4,59 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "85a06a1af59e9c49",
+        "id": "6bdd68a60cda38ae",
         "type": "tabs",
         "children": [
           {
-            "id": "3268f9dc0c046c9e",
+            "id": "3a32f066255e6509",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Wizardry/Security/XSS Prevention.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "16d3524a5825b59e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Elucidations/CSRF.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a474fe3b40400e39",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "YeeBois Repo/Security/Tenancy.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4e2259dfa5d5caf2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Yee Bois.md",
+                "file": "Gallimaufry/Beep Beep.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -85,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Infowar",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -122,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Yee Bois.md",
+                "file": "Gallimaufry/Beep Beep.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Yee Bois.md",
+                "file": "Gallimaufry/Beep Beep.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Yee Bois.md"
+                "file": "Gallimaufry/Beep Beep.md"
               }
             }
           }
@@ -186,12 +149,22 @@
       "publish:Publish changes...": false
     }
   },
-  "active": "4e2259dfa5d5caf2",
+  "active": "3a32f066255e6509",
   "lastOpenFiles": [
-    "Dank/BroFest 2024/Quaintly Wangs.md",
+    "Gallimaufry/stylin.md",
+    "Gallimaufry/Beep Beep.md",
+    "Gallimaufry/bitchole create history.md",
+    "Gallimaufry/Event based dynamic function caller.md",
+    "Gallimaufry/Hella Shib.md",
+    "Gallimaufry/Gallimaufry.md",
+    "Gallimaufry/Infowars Video app thing.md",
+    "Gallimaufry/zod key display map.md",
+    "Untitled.md",
     "Dank/BroFest 2024/Berlin Beerltow.md",
     "Dank/BroFest 2024/BroFest 2024.md",
     "Dank/BroFest 2024/Dirty Dogs.md",
+    "Dank/BroFest 2024/Quaintly Wangs.md",
+    "Yee Bois.md",
     "Dank/BroFest 2024",
     "Dank/Dank.md",
     "YeeBois Repo/Security/Tenancy.md",
@@ -208,21 +181,11 @@
     "Wizardry/Tech Tools",
     "Wizardry/Design Patterns/Creational/Creational.md",
     "Wizardry/Design Patterns/Creational/Factory Method.md",
-    "Wizardry/Design Patterns/Creational/Singleton.md",
-    "Wizardry/Design Patterns/Creational/Prototype.md",
-    "Wizardry/Design Patterns/Creational/Builder.md",
-    "Wizardry/Design Patterns/Creational/Method.md",
     "Wizardry/Design Patterns/Creational/Abstract",
-    "Wizardry/Design Patterns/Structural/Structural.md",
-    "Wizardry/SST/Secrets.md",
     "Wizardry/Design Patterns/Structural",
     "Wizardry/Design Patterns/Creational",
     "Wizardry/Design Patterns",
-    "Wizardry/SST/SST.md",
-    "YeeBois Repo/SST.md",
     "Wizardry/SST",
-    "Yee Bois.md",
-    "YeeBois Repo/Enterprise ERP.md",
     "YeeBois Repo/app ides",
     "Untitled.canvas"
   ]
